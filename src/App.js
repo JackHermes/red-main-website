@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-// import './App.css';
+import './App.css';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-      Red Safety Main Webpage
+      <div className="App">
+        <p>Red Safety Main Webpage</p>
       </div>
     )
   }

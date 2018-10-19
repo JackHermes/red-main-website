@@ -1,7 +1,7 @@
 module.exports = options => {
   return {
     watch: true,
-    entry: './index.js',
+    entry: './src/index.js',
     output: {
       path: '/public/',
       filename: 'bundle.js'
