@@ -1,0 +1,68 @@
+/*
+Color palette:
+Teak: #A79661
+Dark Midnight Blue: #003366
+Jaguar: #04040F
+based on #7f1513
+  shade range:
+    #d42320
+    #c3201d
+    #b21d1b
+    #a11b18
+    #901816
+    #7f1513
+    #6e1210
+    #5d0f0e
+    #4c0d0b
+    #3b0a09
+    #2a0706
+    #190404
+    #080101
+  Tone range:
+    #4c4646
+    #524040
+    #583b3a
+    #5d3535
+    #63302f
+    #692b29
+    #6e2524
+    #74201e
+    #791a19
+    #7f1513
+    #85100d
+    #8a0a08
+    #900502
+*/
+
+body {
+  background-color: #4c4646;
+  display: flex;
+  font-size: large;
+  font-family: sans-serif;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+p {
+  color: tomato;
+}
+
+li {
+  color: white;
+  display: flex;
+  font-size: small;
+  height: 5em;
+  justify-content: center;
+  list-style-type: none;
+  width: 25em;
+}
+
+.colorsPage {
+  font-weight: bold;
+  margin: auto;
+}
+
+.colorSwatches {
+  display: flex;
+  justify-content: space-between;
+}

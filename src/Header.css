@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  grid-column: span 10;
+  height: 10em;
+  justify-content: space-between;
+}
+
+.navigation {
+  align-self: right;
+}

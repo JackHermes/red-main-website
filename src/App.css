@@ -1,15 +1,52 @@
 body {
-  background-color: #A11B18;
-  font-size: large;
   font-family: sans-serif;
+  height: 100%;
+
 }
 
-p {
-  color: tomato;
-  margin: 0 auto;
+#app {
+  width: 100%;
 }
 
-.App {
+.main {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: minmax(3em, auto);
+  width: 100%;
+}
+
+.main-content {
+  background-color: #4c4646;
   display: flex;
+  grid-column: 1 / 11;
+  grid-row: 2 / 20;
+}
+
+.title {
+  color: #d42320;
+  font-size: large;
   font-weight: bold;
+}
+
+.two {
+  background-color: #003366;
+  color: white;
+  grid-column: 1 / 11;
+  height: 30em;
+}
+
+.three {
+  /* background-color: #003366; */
+  color: #A79661;
+  display: flex;
+  grid-column: 1 / 11;
+  height: 7em;
+}
+
+.connector {
+  /* align-self: center; */
+  background-color: grey;
+  height: 100%;
+  margin-left: 1em;
+  width: 1px;
 }
