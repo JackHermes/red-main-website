@@ -1,5 +1,6 @@
 module.exports = options => {
   return {
+    devtool: '#inline-source-map',
     watch: true,
     entry: './src/index.js',
     output: {
