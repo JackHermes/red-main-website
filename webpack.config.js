@@ -1,8 +1,9 @@
 module.exports = options => {
   return {
-    devtool: '#inline-source-map',
+    mode: 'development',
     watch: true,
     entry: './src/index.js',
+    devtool: 'inline-source-map',
     output: {
       path: '/public/',
       filename: 'bundle.js'
