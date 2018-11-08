@@ -7,30 +7,34 @@ import './App.css';
 import './Colors.css';
 import './Header.css';
 
+function Header () {
+  return (
+    <div className="header">
+      <div>
+        <Link to="/"><img src="https://www.redsafety.com/wp-content/uploads/2017/02/logo.png" /></Link>
+      </div>
+      <div className="navigation">
+        <Link to="/">Home</Link>
+        |
+        <Link to="/products">Products</Link>
+        |
+        <Link to="/services">Services</Link>
+        |
+        <Link to="/what-are-we-about">What are We About?</Link>
+        |
+        <Link to="/colors">Colors</Link>
+      </div>
+    </div>
+  )
+}
+
 export default class App extends Component {
   render() {
     return (
       <Router>
         <div className="main">
-         {/*<Header />*/}
-         <div className="header">
-           <div>
-             <Link to="/"><img src="https://www.redsafety.com/wp-content/uploads/2017/02/logo.png" /></Link>
-           </div>
-           <div className="navigation">
-             <Link to="/">Home</Link>
-              |
-             <Link to="/products">Products</Link>
-              |
-             <Link to="/plans">Plans</Link>
-              |
-             <Link to="/what-to-expect">What to Expect</Link>
-              |
-             <Link to="/about">About Us</Link>
-              |
-             <Link to="/colors">Colors</Link>
-           </div>
-         </div>
+         <Header />
+
          <Route exact path="/" component={()=>{
              return (
                <div className="main-content">
@@ -45,29 +49,40 @@ export default class App extends Component {
                    <div className="connector"></div>
                  </div>
                  <div className="section">Products</div>
-                 <div className="connector-container"section>
+                 <div className="connector-container">
                    Connector
                    <div className="connector"></div>
                  </div>
                  <div className="section">Plans</div>
+                 <div className="footer">Footer</div>
                </div>
              );
            }}/>
            <Route exact path="/products" component={()=>{
-              return (<div>Products Here</div>);
+              return (
+                <div>
+                  <div>Products Here</div>
+                  <div className="footer">Footer</div>
+                </div>
+              );
             }} />
-          <Route exact path="/plans" component={()=>{
-                return (<div>Plans Here</div>);
+          <Route exact path="/services" component={()=>{
+                return (
+                  <div>
+                    <div>Services Here</div>
+                    <div className="footer">Footer</div>
+                  </div>
+                );
               }} />
-          <Route exact path="/what-to-expect" component={()=>{
-               return (<div>What to expect Here</div>)
+            <Route exact path="/what-are-we-about" component={()=>{
+               return (
+                 <div>
+                   <div>What are we about Here</div>
+                   <div className="footer">Footer</div>
+                 </div>
+               )
              }} />
-           <Route exact path="/about" component={()=>{
-              return (<div>About Us Here</div>)
-            }} />
           <Route exact path="/colors" component={Colors}/>
-
-          <div className="footer">Footer</div>
         </div>
       </Router>
     )

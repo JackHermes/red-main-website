@@ -6,7 +6,7 @@ body {
 }
 
 a, a:visited {
-  color: #b21d1b;
+  color: #190404;
   text-decoration: none;
 }
 
@@ -79,5 +79,5 @@ a:hover {
   grid-column: 1 / 11;
   /* grid-row: 4 / 9; */
   /* height: 20em; */
-  z-index: 1;
+  /* z-index: 1; */
 }
