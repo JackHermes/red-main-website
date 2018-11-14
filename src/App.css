@@ -104,36 +104,6 @@ a:hover {
 
 /* ----------------------------------- */
 
-.header {
-  background-color: white;
-  display: flex;
-  /* grid-column: 1 / 11; */
-  height: 4em;
-  justify-content: space-evenly;
-  padding-bottom: 1em;
-  padding-top: 1em;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-}
-
-.logo {
-  background: url('https://www.redsafety.com/wp-content/uploads/2017/02/logo.png') no-repeat;
-  height: 50px;
-  margin: 0.75em;
-  width: 80px;
-}
-
-.navigation {
-  align-self: center;
-  display: flex;
-  font-size: small;
-}
-
-.navigation > a {
-  margin: 0em;
-}
-
 
 @media (min-width: 500px) {
 
