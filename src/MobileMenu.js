@@ -10,10 +10,16 @@ export default class MobileMenu extends Component {
       barOne: 'bar level',
       barTwo: 'bar unhide',
       barThree: 'bar level',
-      menuDisplayed: false
+      menuDisplayed: false,
+      dock: 'mobile-menu-dock-hide',
+      counter: 0
     };
 
     this.handleClick = this.handleClick.bind(this);
+  }
+
+  componentDidUpdate() {
+    console.log('MobileMenu updated!');
   }
 
   handleClick() {
@@ -23,14 +29,16 @@ export default class MobileMenu extends Component {
         barOne: 'bar level',
         barTwo: 'bar unhide',
         barThree: 'bar level',
-        menuDisplayed: false
+        menuDisplayed: false,
+        dock: 'mobile-menu-dock mobile-menu-dock-hide'
       });
     } else {
       this.setState({
         barOne: 'bar tip-right',
         barTwo: 'bar hide',
         barThree: 'bar tip-left',
-        menuDisplayed: true
+        menuDisplayed: true,
+        dock: 'mobile-menu-dock'
       });
     }
   }
@@ -43,7 +51,7 @@ export default class MobileMenu extends Component {
           <div className={this.state.barTwo}></div>
           <div className={this.state.barThree}></div>
         </div>
-          <ul className='mobile-menu-dock'>
+          <ul className={this.state.dock}>
             <li className='mobile-menu-dock-item'><Link to="/">Home</Link></li>
             <li className='mobile-menu-dock-item'><Link to="/services">Services</Link></li>
             <li className='mobile-menu-dock-item'><Link to="/products">Products</Link></li>
