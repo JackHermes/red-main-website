@@ -37,12 +37,12 @@ export default class Colors extends Component {
     }
     const shadeColorBlocks =  palette.shade.map(
         (color, key) => {
-          return <li key={key} style={{'backgroundColor': color}}>{color}</li>;
+          return <li key={key} className='colorItem' style={{'backgroundColor': color}}>{color}</li>;
         }
       );
       const toneColorBlocks =  palette.tone.map(
           (color, key) => {
-            return <li key={key} style={{'backgroundColor': color}}>{color}</li>;
+            return <li key={key} className='colorItem' style={{'backgroundColor': color}}>{color}</li>;
           }
         );
 

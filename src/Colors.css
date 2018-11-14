@@ -47,7 +47,7 @@ p {
   color: tomato;
 }
 
-li {
+.colorItem {
   color: white;
   display: flex;
   font-size: small;

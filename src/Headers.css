@@ -1,4 +1,4 @@
-.header {
+.header-lg {
   background-color: white;
   display: flex;
   /* grid-column: 1 / 11; */
@@ -11,10 +11,23 @@
   width: 100%;
 }
 
+.header-sm {
+  background-color: white;
+  display: flex;
+  /* grid-column: 1 / 11; */
+  height: 1em;
+  justify-content: left;
+  padding-bottom: 2.25em;
+  padding-top: 0.25em;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
 .logo {
   background: url('https://www.redsafety.com/wp-content/uploads/2017/02/logo.png') no-repeat;
   height: 50px;
-  margin: 0.75em;
+  /* margin: 0.75em; */
   width: 80px;
 }
 
@@ -26,47 +39,4 @@
 
 .navigation > a {
   margin: 0em;
-}
-
-
-.mobile-menu-bars {
-  /* display: relative; */
-  height: 1.4em;
-  /* position: relative; */
-}
-.bar {
-  position: relative;
-  background-color: black;
-  height: 0.2em;
-  margin: 0.2em;
-  width: 1.5em;
-}
-.tip-right {
-  top: 0.4em;
-  transition: 400ms ease all;
-  transform: rotate(0.15turn);
-}
-.tip-left {
-  bottom: 0.4em;
-  transition: 400ms ease all;
-  transform: rotate(-0.15turn);
-}
-.hide {
-  visibility: hidden;
-  opacity: 0.1;
-  transition: visibility 300ms, opacity 200ms ease;
-}
-
-.level {
-  top: 0em;
-  bottom: 0em;
-  transition: 300ms ease all;
-  transform: rotate(0turn);
-}
-.unhide {
-  top: 0em;
-  bottom: 0em;
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 300ms, opacity 200ms ease;
 }

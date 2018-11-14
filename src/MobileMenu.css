@@ -1,0 +1,72 @@
+
+
+.mobile-menu-bars {
+  height: 1.4em;
+  margin-left: 11em;
+  margin-top: 0.5em;
+}
+.bar {
+  position: relative;
+  background-color: black;
+  height: 0.2em;
+  margin: 0.2em;
+  width: 1.5em;
+}
+.tip-right {
+  top: 0.6em;
+  transition: 400ms ease all;
+  transform: rotate(0.15turn);
+}
+.tip-left {
+  bottom: 0.2em;
+  transition: 400ms ease all;
+  transform: rotate(-0.15turn);
+}
+.hide {
+  visibility: hidden;
+  opacity: 0.1;
+  transition: all 100ms ease, 150ms;
+}
+
+.level {
+  top: 0em;
+  bottom: 0em;
+  transition: 300ms ease all;
+  transform: rotate(0turn);
+  z-index: 1;
+}
+.unhide {
+  top: 0em;
+  bottom: 0em;
+  opacity: 1;
+  transition: all 100ms ease 150ms;
+  visibility: visible;
+  z-index: 2;
+}
+
+.mobile-menu {
+  display: flex;
+}
+
+.mobile-menu-dock {
+  align-items: flex-start;
+  background-color: lightgray;
+  border-radius: 5%;
+  box-shadow: -0.1em 0.1em 0.5em gray;
+  display: flex;
+  flex-wrap: wrap;
+  height: 14em;
+  margin: 0em;
+  padding-left: 0.5em;
+  padding-top: 1em;
+  position: absolute;
+  right: 0em;
+  top: 0em;
+  width: 8em;
+}
+
+.mobile-menu-dock-item {
+  height: 1em;
+  padding: 0.2em;
+  list-style-type: none;
+}
