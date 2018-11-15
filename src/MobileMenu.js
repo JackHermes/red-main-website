@@ -11,8 +11,7 @@ export default class MobileMenu extends Component {
       barTwo: 'bar unhide',
       barThree: 'bar level',
       menuDisplayed: false,
-      dock: 'mobile-menu-dock-hide',
-      counter: 0
+      dock: 'mobile-menu-dock mobile-menu-dock-hide'
     };
 
     this.handleClick = this.handleClick.bind(this);
