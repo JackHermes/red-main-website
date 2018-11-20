@@ -3,7 +3,7 @@
   display: flex;
   /* grid-column: 1 / 11; */
   height: 4em;
-  justify-content: space-evenly;
+  justify-content: start;
   padding-bottom: 1em;
   padding-top: 1em;
   position: fixed;
@@ -25,7 +25,7 @@
 }
 
 .logo {
-  background: url('https://www.redsafety.com/wp-content/uploads/2017/02/logo.png') no-repeat;
+  /* background: url('https://www.redsafety.com/wp-content/uploads/2017/02/logo.png') no-repeat; */
   height: 50px;
   /* margin: 0.75em; */
   width: 80px;
@@ -40,9 +40,8 @@
 .navigation > a {
   margin: 0em;
 }
-
 .contact-us-box {
-  background-color: white;
+  align-content: center;
   border: solid;
   font-size: small;
   height: 2.75em;

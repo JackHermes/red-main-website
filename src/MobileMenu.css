@@ -15,12 +15,12 @@
 }
 .tip-right {
   top: 0.6em;
-  transition: 400ms ease all;
+  transition: 300ms ease all;
   transform: rotate(0.15turn);
 }
 .tip-left {
   bottom: 0.2em;
-  transition: 400ms ease all;
+  transition: 300ms ease all;
   transform: rotate(-0.15turn);
 }
 .hide {
@@ -45,13 +45,14 @@
 
 .mobile-menu {
   display: flex;
+  z-index: 100;
 }
 
 .mobile-menu-dock {
   align-items: flex-start;
   background-color: lightgray;
   border-radius: 5%;
-  box-shadow: -0.1em 0.1em 0.5em gray;
+  box-shadow: -0.1em 0.1em 0.5em black;
   display: flex;
   flex-wrap: wrap;
   height: 14em;

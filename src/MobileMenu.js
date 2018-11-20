@@ -17,9 +17,9 @@ export default class MobileMenu extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidUpdate() {
-    console.log('MobileMenu updated!');
-  }
+  // componentDidUpdate() {
+  //   console.log('MobileMenu updated!');
+  // }
 
   handleClick() {
     console.log('CLICK.', this.state);
@@ -51,11 +51,11 @@ export default class MobileMenu extends Component {
           <div className={this.state.barThree}></div>
         </div>
           <ul className={this.state.dock}>
-            <li className='mobile-menu-dock-item'><Link to="/">Home</Link></li>
-            <li className='mobile-menu-dock-item'><Link to="/services">Services</Link></li>
-            <li className='mobile-menu-dock-item'><Link to="/products">Products</Link></li>
-            <li className='mobile-menu-dock-item'><Link to="/about">What are We About?</Link></li>
-            <li className='mobile-menu-dock-item'><Link to="/colors">Colors</Link></li>
+            <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/">Home</Link></li>
+            <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/services">Services</Link></li>
+            <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/products">Products</Link></li>
+            <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/about">What are We About?</Link></li>
+            <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/colors">Colors</Link></li>
           </ul>
       </div>
     );
