@@ -9,6 +9,7 @@
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 99;
 }
 
 .header-sm {
@@ -22,6 +23,8 @@
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 99;
+
 }
 
 .logo {
@@ -44,7 +47,7 @@
   align-content: center;
   border: solid;
   font-size: small;
-  height: 2.75em;
+  height: 1.5em;
   position: fixed;
   bottom: 0.5em;
   padding: 0.25em;

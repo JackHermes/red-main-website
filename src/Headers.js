@@ -10,7 +10,7 @@ const SmallScreenHeader = () => {
     <div className='header-sm'>
       <Link to='/'><div className='logo'></div></Link>
       <MobileMenu />
-      <div className='contact-us-box'>Contact us At (###)###-####</div>
+      <div className='contact-us-box'>(###)###-####</div>
     </div>
   )
 }
@@ -25,7 +25,7 @@ const LargeScreenHeader = () => {
         <Link to='/about'>What are We About?</Link>
         <Link to='/colors'>Colors</Link>
       </div>
-      <div className='contact-us-box'>Contact Us At (###)###-####</div>
+      <div className='contact-us-box'>(###)###-####</div>
     </div>
   )
 }
