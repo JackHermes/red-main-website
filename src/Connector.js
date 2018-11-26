@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
-// import logo from './img/grey-logo.png';
+import './Connector.css';
 
-
-const Connector = () => {
+const Connector = (props) => {
   return (
     <div className='connector-container'>
+      <div className='connector-text'>
+        <p className='connector-text-large'>{props.bigText}</p>
+        <p className='connector-text-small'>{props.smallText}</p>
+      </div>
       <div className='connector-line'>
         <div className='connector-bullet'></div>
         <div className='connector-bullet-pulse'></div>
