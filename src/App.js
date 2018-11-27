@@ -7,10 +7,15 @@ import { LargeScreenHeader, SmallScreenHeader} from './Headers.js';
 import './App.css';
 
 export default class App extends Component {
-  state = {
-    windowHeight: undefined,
-    windowWidth: undefined
-  };
+  // constructor(props) {
+  //   super(props);
+    state = {
+      windowHeight: undefined,
+      windowWidth: undefined
+    };
+
+    // this.handleResize = this.handleResize.bind(this);
+  // }
 
   handleResize = () => this.setState({
     windowHeight: window.innerHeight,
