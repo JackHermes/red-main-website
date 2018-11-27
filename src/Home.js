@@ -7,6 +7,7 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      stopCheckingForFadeIn: 4,
       connectorProps: [
         {
           titleText: 'Connector text',
@@ -43,19 +44,22 @@ export default class Home extends Component {
 
 // check if each connector component is visible
   handleScroll(event) {
-    debounce(
-      this.state.connectorProps.forEach(
-        (obj, index) => {
-          let containerTextElement = document.getElementById(obj.elementId);
+    if(this.state.stopCheckingForFadeIn > 0) {
+      debounce(
+        this.state.connectorProps.forEach(
+          (obj, index) => {
+            let containerTextElement = document.getElementById(obj.elementId);
 
-          if(isInViewport(containerTextElement) && !containerTextElement.classList.contains('fadeIn')) {
-            console.log('visible!', containerTextElement);
-            containerTextElement.className += ' fadeIn';
-          } else {
-            console.log('not', containerTextElement);
+            if(isInViewport(containerTextElement) && !containerTextElement.classList.contains('fadeIn')) {
+              console.log('visible!', containerTextElement);
+              containerTextElement.className += ' fadeIn';
+              this.setState({stopCheckingForFadeIn: this.state.stopCheckingForFadeIn - 1})
+            } else {
+              console.log('not', containerTextElement);
+            }
           }
-        }
-      ), 750)
+        ), 250)
+    }
   }
 
   render() {
