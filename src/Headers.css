@@ -54,3 +54,16 @@
   right: 0.5em;
   width: 10em;
 }
+
+
+.font-test {
+  font-family: din-condensed, sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.left-logo {
+  color: darkblue;
+}
+.right-logo {
+  color: darkred;
+}
