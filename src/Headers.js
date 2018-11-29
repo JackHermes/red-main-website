@@ -22,7 +22,7 @@ const SmallScreenHeader = () => {
 const LargeScreenHeader = () => {
   return (
     <div className='header-lg'>
-      <Link to='/'><span className='font-test left-logo'>red</span><span className='font-test right-logo'>safety</span></Link>
+      <Link to='/'><div className='font-test'><span className='left-logo'>red</span><span className='right-logo'>safety</span></div></Link>
       <div className='navigation'>
         <Link to='/products'>Products</Link>
         <Link to='/services'>Services</Link>

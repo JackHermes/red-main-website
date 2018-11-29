@@ -1,7 +1,8 @@
 body {
   background-color: white;
   color: #190404;
-  font-family: sans-serif;
+  font-family: din-condensed, sans-serif;
+  /* font-family: sans-serif; */
   /* height: 100%;
   width: 100%; */
 }
@@ -24,15 +25,15 @@ a:hover {
   display: grid;
   grid-row: 2 / 51;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(45, 150px);
+  grid-template-rows: repeat(51, 150px);
 }
 
 .footer {
   background-color: #003366;
   grid-column: 1 / 11;
-  grid-row: 41 / 46 ;
+  grid-row: 49 / 54 ;
   /* height: 30em; */
-  /* z-index: 2; */
+  z-index: 2; 
 }
 
 .main-content {
@@ -43,27 +44,6 @@ a:hover {
   grid-column: 1 / 11;
   grid-row: 2 / 26;
 }
-
-/* .parallax {
-  perspective: 1px;
-  height: 25em;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax_layer--back {
-  transform: translateZ(-1px);
-} */
 
 .section {
   background-color: #4c4646;
@@ -137,24 +117,6 @@ a:hover {
 .box-five {
   background-color: #901816;
 }
-
-
-
-
-
-/* .font-test {
-  font-family: din-condensed, sans-serif;
-  font-size: xx-large;
-  font-weight: bold;
-}
-.left-logo {
-  color: darkblue;
-}
-.right-logo {
-  color: darkred;
-} */
-
-
 
 /* ----------------------------------- */
 @media (min-width: 500px) {
