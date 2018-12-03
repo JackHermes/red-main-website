@@ -1,38 +1,17 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
+import About from './About/About.js';
 import Colors from './Colors.js';
 import Home from './Home/Home.js';
+import Products from './Products/Products.js';
+import Services from './Services/Services.js';
 
 const images = {
   crawling: require('../img/baby-crawl.jpeg'),
   girlDog: require('../img/girl-dog-big.jpg'),
   motherBaby: 'https://media.front.xoedge.com/images/3bff8536-3d16-4407-b6f7-72cbedfedfba~rs_1080.h'
 }
-
-const Products = () => {
-    return (
-      <div className='main-content' >
-        <div>'Products' Here</div>
-      </div>
-    );
-  };
-
-const Services = () => {
-    return (
-      <div className='main-content'>
-        <div>'Services' Here</div>
-      </div>
-    );
-  };
-
-const About = () => {
-    return (
-      <div className='main-content'>
-        <div>'What are we about?' Here</div>
-      </div>
-    );
-  };
 
 const Content = () => {
 
