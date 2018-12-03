@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import Colors from './Colors.js';
-// import './Colors.css';
-// import Section from './Section.js';
-import Connector from './Connector.js';
 import Home from './Home.js';
 
 const images = {
@@ -21,7 +18,7 @@ const Products = () => {
     );
   };
 
-const Services = ()=>{
+const Services = () => {
     return (
       <div className='main-content'>
         <div>'Services' Here</div>
@@ -29,7 +26,7 @@ const Services = ()=>{
     );
   };
 
-const About = ()=>{
+const About = () => {
     return (
       <div className='main-content'>
         <div>'What are we about?' Here</div>

@@ -1,7 +1,6 @@
 .header-lg {
   background-color: white;
   display: flex;
-  /* grid-column: 1 / 11; */
   height: 4em;
   justify-content: start;
   padding-bottom: 1em;
@@ -23,12 +22,6 @@
   top: 0px;
   width: 100%;
   z-index: 99;
-
-}
-
-.logo {
-  height: 50px;
-  width: 80px;
 }
 
 .navigation {
@@ -40,6 +33,7 @@
 .navigation > a {
   margin: 0em;
 }
+
 .contact-us-box {
   align-content: center;
   border: solid;
@@ -56,9 +50,11 @@
   font-size: 2.5em;
   font-weight: bold;
 }
+
 .left-logo {
   color: darkblue;
 }
+
 .right-logo {
   color: darkred;
 }

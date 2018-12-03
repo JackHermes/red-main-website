@@ -2,9 +2,6 @@ body {
   background-color: white;
   color: #190404;
   font-family: din-condensed, sans-serif;
-  /* font-family: sans-serif; */
-  /* height: 100%;
-  width: 100%; */
 }
 
 a, a:visited {
@@ -14,10 +11,6 @@ a, a:visited {
 
 a:hover {
   color: #d42320;
-}
-
-#app {
-  /* width: 100%; */
 }
 
 .main {
@@ -32,100 +25,11 @@ a:hover {
   background-color: #003366;
   grid-column: 1 / 11;
   grid-row: 49 / 54 ;
-  /* height: 30em; */
-  z-index: 2; 
-}
-
-.main-content {
-  /* background-color: #4c4646; */
-  display: grid;
-  grid-template-columns: inherit;
-  grid-template-rows: repeat(20, 1fr);
-  grid-column: 1 / 11;
-  grid-row: 2 / 26;
-}
-
-.section {
-  background-color: #4c4646;
-  grid-column: 1 / 11;
-  font-size: large;
-  font-weight: bold;
-  /* z-index: 1; */
-  height:1000px;
   z-index: 2;
-}
-
-.section > p {
-  font-size: x-large;
-  margin: 3em;
-}
-
-.protect {
-  background-image: url('./img/girl-dog-big.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-
-.safety {
-  background-image: url('./img/mother-baby.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-
-.products {
-  background-image: url('https://media.front.xoedge.com/images/3bff8536-3d16-4407-b6f7-72cbedfedfba~rs_1080.h');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  color: black;
-}
-
-.testimonials {
-  background-image: url('./img/girl-dog-food.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-
-.color-boxes {
-  display: flex;
-  height: 500px;
-}
-
-.color-box {
-  align-items: center;
-  border: black;
-  display: flex;
-  justify-content: center;
-  width: 25%;
-}
-
-.box-one {
-  background-color:#4c0d0b;
-}
-.box-two {
-  background-color: #5d0f0e;
-}
-.box-three {
-  background-color: #6e1210;
-}
-.box-four {
-  background-color: #7f1513;
-}
-.box-five {
-  background-color: #901816;
 }
 
 /* ----------------------------------- */
 @media (min-width: 500px) {
-  .logo {
-    /* left: 1em; */
-    margin: 0.5em;
-    /* position: absolute; */
-    width: 209px;
-  }
 
   .navigation {
     font-size: large;

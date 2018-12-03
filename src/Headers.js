@@ -2,12 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import MobileMenu from './MobileMenu.js';
-
 import './Headers.css';
-
-// <div><span className='font-test left-logo'>red</span><span className='font-test right-logo'>safety</span></div>
-// <img alt='Red Safety logo' src='https://www.redsafety.com/wp-content/uploads/2017/02/logo.png' />
-// <div className='logo'></div>
 
 const SmallScreenHeader = () => {
   return (

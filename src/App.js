@@ -13,8 +13,7 @@ export default class App extends Component {
       windowHeight: undefined,
       windowWidth: undefined
     };
-
-    // this.handleResize = this.handleResize.bind(this);
+    this.handleResize = this.handleResize.bind(this);
   }
 
   handleResize = () => this.setState({
@@ -30,7 +29,6 @@ export default class App extends Component {
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleResize);
   }
-
 
 // Aim for 400, 600, 800, 1000+ designs, perhaps
   render() {

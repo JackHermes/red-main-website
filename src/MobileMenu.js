@@ -16,11 +16,7 @@ export default class MobileMenu extends Component {
 
     this.handleClick = this.handleClick.bind(this);
   }
-
-  // componentDidUpdate() {
-  //   console.log('MobileMenu updated!');
-  // }
-
+  
   handleClick() {
     console.log('CLICK.', this.state);
     if(this.state.menuDisplayed) {

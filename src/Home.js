@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
+
 import Connector from './Connector.js';
 import { isInViewport, debounce } from './HelperFunctions.js';
+import './Home.css';
 
 export default class Home extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
+      // After n elements fade in, stop checking
       stopCheckingForFadeIn: 4,
+      // Content for each connector component
       connectorProps: [
         {
           titleText: 'Connector text',
@@ -51,12 +55,12 @@ export default class Home extends Component {
             let containerTextElement = document.getElementById(obj.elementId);
 
             if(isInViewport(containerTextElement) && !containerTextElement.classList.contains('fadeIn')) {
-              console.log('visible!', containerTextElement);
+              // console.log('visible!', containerTextElement);
               containerTextElement.className += ' fadeIn';
               this.setState({stopCheckingForFadeIn: this.state.stopCheckingForFadeIn - 1})
-            } else {
+            } /*else {
               console.log('not', containerTextElement);
-            }
+            } */
           }
         ), 250)
     }
@@ -64,7 +68,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className='main-content parallax'>
+      <div className='main-content'>
         <div className='section protect'>
           <p>Creating a safe home for you and your family.</p>
           <p>Protecting what matters most.</p>

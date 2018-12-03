@@ -81,7 +81,7 @@
 }
 
 .fadeIn {
-  animation: fadeIn 2s;
+  animation: fadeIn 1.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -91,7 +91,6 @@
   30% {opacity: 1.0; background-color: lightgrey;}
   90% {opacity: 0.0; background-color: lightgrey;}
   100% {transform: scale(1.7, 1.7); opacity: 0.0; background-color: lightgrey;}
-  /* 100% {opacity: 0.0;} */
 }
 
 @keyframes fadeIn {
