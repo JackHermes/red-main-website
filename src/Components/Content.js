@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
 import Colors from './Colors.js';
-import Home from './Home.js';
+import Home from './Home/Home.js';
 
 const images = {
-  crawling: require('./img/baby-crawl.jpeg'),
-  girlDog: require('./img/girl-dog-big.jpg'),
+  crawling: require('../img/baby-crawl.jpeg'),
+  girlDog: require('../img/girl-dog-big.jpg'),
   motherBaby: 'https://media.front.xoedge.com/images/3bff8536-3d16-4407-b6f7-72cbedfedfba~rs_1080.h'
 }
 

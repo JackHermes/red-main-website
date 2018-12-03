@@ -26,11 +26,11 @@
 }
 
 .protect {
-  background-image: url('./img/girl-dog-big.jpg');
+  background-image: url('../../img/girl-dog-big.jpg');
 }
 
 .safety {
-  background-image: url('./img/mother-baby.jpg');
+  background-image: url('../../img/mother-baby.jpg');
 }
 
 .products {
@@ -39,7 +39,7 @@
 }
 
 .testimonials {
-  background-image: url('./img/girl-dog-food.jpg');
+  background-image: url('../../img/girl-dog-food.jpg');
 }
 
 .color-boxes {

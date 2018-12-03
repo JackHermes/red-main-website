@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import { Content } from './Content.js';
-import { LargeScreenHeader, SmallScreenHeader} from './Headers.js';
+import { LargeScreenHeader, SmallScreenHeader} from './Headers/Headers.js';
 
 import './App.css';
 

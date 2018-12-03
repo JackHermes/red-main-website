@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Connector from './Connector.js';
-import { isInViewport, debounce } from './HelperFunctions.js';
+import Connector from '../Common/Connector.js';
+import { isInViewport, debounce } from '../../HelperFunctions.js';
 import './Home.css';
 
 export default class Home extends Component {
