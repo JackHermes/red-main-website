@@ -16,11 +16,6 @@ export default class App extends Component {
     this.handleResize = this.handleResize.bind(this);
   }
 
-  handleResize = () => this.setState({
-    windowHeight: window.innerHeight,
-    windowWidth: window.innerWidth
-  });
-
   componentDidMount() {
     this.handleResize();
     window.addEventListener('resize', this.handleResize);
@@ -30,25 +25,32 @@ export default class App extends Component {
     window.removeEventListener('resize', this.handleResize);
   }
 
+  handleResize() {
+    this.setState({
+      windowHeight: window.innerHeight,
+      windowWidth: window.innerWidth
+    });
+  }
+
 // Aim for 400, 600, 800, 1000+ designs, perhaps
   render() {
-    if(this.state.windowWidth > 400) {
+    if(this.state.windowWidth < 400) {
       return (
         <Router>
           <div>
-            <LargeScreenHeader />
-            <Content />
+            <SmallScreenHeader screenSize='small' />
+            <Content screenSize='small' />
           </div>
         </Router>
-              )
+      )
     } else {
       return (
-      <Router>
-        <div>
-          <SmallScreenHeader />
-          <Content />
-        </div>
-      </Router>
+        <Router>
+          <div>
+            <LargeScreenHeader screenSize='large' />
+            <Content screenSize='large' />
+          </div>
+        </Router>
       )
     }
   }

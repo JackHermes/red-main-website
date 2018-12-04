@@ -11,19 +11,6 @@
   z-index: 99;
 }
 
-.header-sm {
-  background-color: white;
-  display: flex;
-  height: 1em;
-  justify-content: left;
-  padding-bottom: 2.25em;
-  padding-top: 0.25em;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 99;
-}
-
 .navigation {
   align-self: center;
   display: flex;
@@ -37,6 +24,7 @@
 .contact-us-box {
   align-content: center;
   border: solid;
+
   font-size: small;
   height: 1.5em;
   position: fixed;
@@ -46,7 +34,7 @@
   width: 10em;
 }
 
-.font-test {
+.text-logo {
   font-size: 2.5em;
   font-weight: bold;
 }

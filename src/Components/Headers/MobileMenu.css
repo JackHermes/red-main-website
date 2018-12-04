@@ -77,3 +77,13 @@
   padding: 0.2em;
   list-style-type: none;
 }
+/* Use a wrapper to prevent browser from increasing doc width */
+.mobile-menu-dock-wrapper {
+  overflow: hidden;
+  z-index: 99;
+}
+
+/* .mobile-menu-dock-wrapper-hide {
+  transform: scale(0);
+  transition: transform 500ms ease;
+} */

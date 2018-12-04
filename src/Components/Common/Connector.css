@@ -67,14 +67,14 @@
   opacity: 0;
 }
 
-.connector-text-large {
+.connector-text-big {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 14px white;
   font-size: xx-large;
 }
 
-.connector-text-small {
+.connector-text-little {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 14px white;

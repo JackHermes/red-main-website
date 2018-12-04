@@ -13,11 +13,11 @@ const images = {
   motherBaby: 'https://media.front.xoedge.com/images/3bff8536-3d16-4407-b6f7-72cbedfedfba~rs_1080.h'
 }
 
-const Content = () => {
-
+const Content = (props) => {
+  console.log('Content component: ', props);
     return (
       <div className='main'>
-        <Route exact path='/' component={Home}/>
+        <Route exact path='/' render={() => <Home screenSize={props.screenSize} />}/>
         <Route exact path='/products' component={Products} />
         <Route exact path='/services' component={Services} />
         <Route exact path='/about' component={About} />

@@ -1,0 +1,7 @@
+.connector-text-small-screen {
+  display: inline-block;
+  position: relative;
+  left: 0em;
+  top: 15em;
+  opacity: 0;
+}
