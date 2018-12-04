@@ -1,6 +1,7 @@
-.contact-us-box {
+.contact-us-box-sm {
   background-color: white;
   opacity: 0.5;
+    bottom: 0.5em;
 }
 
 .header-sm {
@@ -14,4 +15,8 @@
   top: 0px;
   width: 100%;
   z-index: 99;
+}
+
+.text-logo-sm {
+  font-size: 1.75em;
 }

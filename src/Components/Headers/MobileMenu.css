@@ -1,6 +1,11 @@
+
+.mobile-menu {
+  display: flex;
+  z-index: 100;
+}
 .mobile-menu-bars {
   height: 1.4em;
-  margin-left: 11em;
+  margin-left: 7em;
   margin-top: 0.5em;
 }
 .bar {
@@ -39,11 +44,6 @@
   opacity: 1;
   transition: all 100ms ease 150ms;
   visibility: visible;
-}
-
-.mobile-menu {
-  display: flex;
-  z-index: 100;
 }
 
 .mobile-menu-dock {

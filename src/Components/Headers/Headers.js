@@ -10,9 +10,9 @@ import './Headers-lg.css';
 const SmallScreenHeader = () => {
   return (
     <div className='header-sm'>
-      <Link to='/'><div className='text-logo'><span className='left-logo'>red</span><span className='right-logo'>safety</span></div></Link>
+      <Link to='/'><div className='text-logo text-logo-sm'><span className='left-logo'>red</span><span className='right-logo'>safety</span></div></Link>
       <MobileMenu />
-      <div className='contact-us-box'>(###)###-####</div>
+      <div className='contact-us-box contact-us-box-sm'>(###)###-####</div>
     </div>
   )
 }
@@ -27,7 +27,7 @@ const LargeScreenHeader = () => {
         <Link to='/about'>What are We About?</Link>
         <Link to='/colors'>Colors</Link>
       </div>
-      <div className='contact-us-box-lg'>(###)###-####</div>
+      <div className='contact-us-box'>(###)###-####</div>
     </div>
   )
 }
