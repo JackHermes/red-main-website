@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   background-color: white;
   color: #190404;
@@ -26,30 +31,4 @@ a:hover {
   grid-column: 1 / 11;
   grid-row: 49 / 54 ;
   z-index: 2;
-}
-
-/* ----------------------------------- */
-@media (min-width: 500px) {
-
-  .navigation {
-    font-size: large;
-  }
-
-  .navigation > a {
-    margin-right: 1em;
-    margin-left: 1em;
-  }
-
-  .color-section {
-  }
-
-  .contact-us-box {
-    align-content: center;
-    border: solid;
-    font-size: inherit;
-    padding: 1em;
-    position: absolute;
-    right: 2em;
-    top: 1em;
-  }
 }
