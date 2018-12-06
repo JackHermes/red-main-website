@@ -1,7 +1,7 @@
 .contact-us-box-sm {
-  background-color: white;
-  opacity: 0.5;
-    bottom: 0.5em;
+  /* opaque white background: */
+  background-color: rgba(255,255,255,0.5);
+  bottom: 0.5em;
 }
 
 .header-sm {

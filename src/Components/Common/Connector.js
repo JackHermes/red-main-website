@@ -6,7 +6,6 @@ import './Connector-sm.css';
 
 const Connector = (props) => {
   let textClassName;
-  console.log('Connector Component ', props.screenSize);
   if(props.screenSize === 'small') {
     textClassName = 'connector-text-sm-screen';
   } else {

@@ -26,8 +26,7 @@ export default class MobileMenu extends Component {
         barTwo: 'bar unhide',
         barThree: 'bar level',
         menuDisplayed: false,
-        dock: 'mobile-menu-dock mobile-menu-dock-hide',
-        dockWrapper: 'mobile-menu-dock-wrapper'
+        dock: 'mobile-menu-dock mobile-menu-dock-hide'
       });
     } else {
       // Unhide dock
@@ -36,8 +35,7 @@ export default class MobileMenu extends Component {
         barTwo: 'bar hide',
         barThree: 'bar tip-left',
         menuDisplayed: true,
-        dock: 'mobile-menu-dock',
-        dockWrapper: 'mobile-menu-dock-wrapper'
+        dock: 'mobile-menu-dock'
       });
     }
   }

@@ -4,9 +4,11 @@
   z-index: 100;
 }
 .mobile-menu-bars {
+  position: absolute;
   height: 1.4em;
-  margin-left: 7em;
+  /* margin-left: 7em; */
   margin-top: 0.5em;
+  right: 1em;
 }
 .bar {
   position: relative;
@@ -63,7 +65,7 @@
   width: 8em;
   z-index: 1;
 
-  transform: translate(0em);
+  transform: translate(0.5em);
   transition: transform 500ms ease;
 }
 

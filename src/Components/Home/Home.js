@@ -10,7 +10,6 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      screenSize: props.screenSize,
       // After n elements fade in, stop checking
       stopCheckingForFadeIn: 4,
       // Content for each connector component
@@ -69,7 +68,6 @@ export default class Home extends Component {
   }
 
   render() {
-    console.log('Home Component ', this.props);
     return (
       <div className='main-content'>
         <div className='section protect'>

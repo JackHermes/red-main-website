@@ -34,7 +34,7 @@ export default class App extends Component {
 
 // Aim for 400, 600, 800, 1000+ designs, perhaps
   render() {
-    if(this.state.windowWidth < 400) {
+    if(this.state.windowWidth < 500) {
       return (
         <Router>
           <div>
