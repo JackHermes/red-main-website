@@ -4,7 +4,7 @@
   grid-template-columns: inherit;
   grid-template-rows: repeat(20, 1fr);
   grid-column: 1 / 11;
-  grid-row: 2 / 26;
+  /* grid-row: 2 / 26; */
 }
 
 .section {
@@ -27,6 +27,8 @@
 
 .protect {
   background-image: url('../../img/girl-dog-big.jpg');
+  /* gap for 'collapsing' navbar   */
+  margin-top: 6.5em;
 }
 
 .safety {

@@ -1,7 +1,16 @@
-.connector-text-small-screen {
-  display: inline-block;
-  position: relative;
-  left: 0em;
+.connector-text-sm-screen {
+  left: 5em;
   top: 15em;
-  opacity: 0;
+}
+
+.connector-line-sm-screen {
+  margin-left: 2em;
+}
+
+.connector-text-little-sm-screen {
+  font-size: normal;
+}
+
+.connector-text-big-sm-screen {
+  font-size: x-large;
 }

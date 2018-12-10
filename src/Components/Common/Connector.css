@@ -1,6 +1,6 @@
 .connector-container {
   color: black;
-  background: linear-gradient(0.25turn, white 17em, white 17em, lightgrey);
+  background: linear-gradient(0.25turn, white 15%, white 15%, lightgrey);
   grid-column: 1 / 11;
   height: 40em;
   z-index: 1;
@@ -14,7 +14,6 @@
   display: flex;
   height: 37em;
   justify-content: center;
-  margin-left: 16.8em;
   margin-top: 1em;
   overflow: visible;
   position: relative;
@@ -54,7 +53,7 @@
   margin: -1.3em;
   position: relative;
   top: 0;
-  left: -2;
+  left: -1.5;
   width: 1.9em;
   z-index: 2;
 }
@@ -62,16 +61,15 @@
 .connector-text {
   display: inline-block;
   position: relative;
-  left: 35em;
-  top: 15em;
   opacity: 0;
 }
 
+/* both big and small text repeat some styles
+  to show background between the text blocks */
 .connector-text-big {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 14px white;
-  font-size: xx-large;
 }
 
 .connector-text-little {

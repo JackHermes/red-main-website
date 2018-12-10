@@ -46,7 +46,6 @@ export default class Home extends Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
-
 // check if each connector component is visible
   handleScroll(event) {
     if(this.state.stopCheckingForFadeIn > 0) {
@@ -56,14 +55,12 @@ export default class Home extends Component {
             let containerTextElement = document.getElementById(obj.elementId);
 
             if(isInViewport(containerTextElement) && !containerTextElement.classList.contains('fadeIn')) {
-              // console.log('visible!', containerTextElement);
               containerTextElement.className += ' fadeIn';
               this.setState({stopCheckingForFadeIn: this.state.stopCheckingForFadeIn - 1})
-            } /*else {
-              console.log('not', containerTextElement);
-            } */
+            }
           }
-        ), 250)
+        ), 250
+      )
     }
   }
 
