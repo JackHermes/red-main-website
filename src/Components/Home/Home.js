@@ -4,6 +4,7 @@ import Connector from '../Common/Connector.js';
 import { isInViewport, debounce } from '../../HelperFunctions.js';
 import './Home.css';
 import './Home-sm.css';
+import '../Common/Sections.css';
 
 export default class Home extends Component {
 

@@ -1,0 +1,70 @@
+
+.section {
+  background-color: #4c4646;
+  grid-column: 1 / 11;
+  font-size: large;
+  font-weight: bold;
+  height:1000px;
+  z-index: 2;
+  /* style background-images */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.section > p {
+  font-size: x-large;
+  margin: 3em;
+}
+
+.protect {
+  background-image: url('../../img/girl-dog-big.jpg');
+  /* gap for 'collapsing' navbar   */
+  margin-top: 6.5em;
+}
+
+.safety {
+  background-image: url('../../img/mother-baby.jpg');
+}
+
+.products {
+  background-image: url('https://media.front.xoedge.com/images/3bff8536-3d16-4407-b6f7-72cbedfedfba~rs_1080.h');
+  color: black;
+}
+
+.testimonials {
+  background-image: url('../../img/girl-dog-food.jpg');
+}
+
+.color-boxes {
+  display: grid;
+  /* height: 500px; */
+}
+
+.color-box {
+  align-items: center;
+  border: black;
+  display: flex;
+  justify-content: center;
+  /* width: 25%; */
+}
+
+.box-one {
+  background-color:#4c0d0b;
+}
+
+.box-two {
+  background-color: #5d0f0e;
+}
+
+.box-three {
+  background-color: #6e1210;
+}
+
+.box-four {
+  background-color: #7f1513;
+}
+
+.box-five {
+  background-color: #901816;
+}
