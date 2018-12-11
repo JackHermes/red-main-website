@@ -7,10 +7,12 @@ import './Headers-sm.css';
 import './Headers-med.css';
 import './Headers-lg.css';
 
+import logo from '../../img/approved-logo.jpg';
+
 const SmallScreenHeader = () => {
   return (
     <div className='header-sm'>
-      <Link to='/'><div className='text-logo text-logo-sm'><span className='left-logo'>red</span><span className='right-logo'>safety</span></div></Link>
+      <Link to='/'><img className='logo-sm' src={logo} /></Link>
       <MobileMenu />
       <div className='contact-us-box contact-us-box-sm'>(###)###-####</div>
     </div>
@@ -20,7 +22,7 @@ const SmallScreenHeader = () => {
 const LargeScreenHeader = () => {
   return (
     <div className='header-lg'>
-      <Link to='/'><div className='text-logo'><span className='left-logo'>red</span><span className='right-logo'>safety</span></div></Link>
+      <Link to='/'><img className='logo-lg' src={logo} /></Link>
       <div className='navigation-lg'>
         <Link to='/products'>Products</Link>
         <Link to='/services'>Services</Link>

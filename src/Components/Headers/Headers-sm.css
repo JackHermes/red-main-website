@@ -17,6 +17,10 @@
   z-index: 99;
 }
 
-.text-logo-sm {
+/* .text-logo-sm {
   font-size: 1.75em;
+} */
+
+.logo-sm {
+  width: 10em;
 }
