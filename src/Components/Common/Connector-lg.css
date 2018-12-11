@@ -4,7 +4,9 @@
 }
 
 .connector-line-lg-screen {
+  height: 37em;
   margin-left: 16.8em;
+  top: -125px;
 }
 
 .connector-text-little-lg-screen {
@@ -13,4 +15,8 @@
 
 .connector-text-big-lg-screen {
   font-size: xx-large;
+}
+
+.connector-container-lg-screen {
+  height: 40em;
 }

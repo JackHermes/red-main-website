@@ -2,7 +2,6 @@
   color: black;
   background: linear-gradient(0.25turn, white 15%, white 15%, lightgrey);
   grid-column: 1 / 11;
-  height: 40em;
   z-index: 1;
 }
 
@@ -12,13 +11,11 @@
   border: solid lightgrey;
   border-radius: 5px;
   display: flex;
-  height: 37em;
   justify-content: center;
   margin-top: 1em;
   overflow: visible;
   position: relative;
   width: 0.25em;
-  top: -120px;
 }
 
 .connector-bullet {
