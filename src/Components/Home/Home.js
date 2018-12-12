@@ -71,21 +71,23 @@ export default class Home extends Component {
     return (
       <div className='main-content'>
 
-        <SectionProtect />
+        <SectionProtect screenSize={this.props.screenSize} />
 
         <Connector  id={this.state.connectorProps[0].elementId} titleText={this.state.connectorProps[0].titleText} descriptiveText={this.state.connectorProps[0].descriptiveText} screenSize={this.props.screenSize}/>
 
-        <SectionSafety />
+        <SectionSafety screenSize={this.props.screenSize} />
 
         <Connector  id={this.state.connectorProps[1].elementId} titleText={this.state.connectorProps[1].titleText} descriptiveText={this.state.connectorProps[1].descriptiveText} screenSize={this.props.screenSize}/>
 
-        <SectionProducts />
+        <SectionProducts screenSize={this.props.screenSize} />
 
         <Connector  id={this.state.connectorProps[2].elementId} titleText={this.state.connectorProps[2].titleText} descriptiveText={this.state.connectorProps[2].descriptiveText} screenSize={this.props.screenSize}/>
+
         <ColorBoxes screenSize={this.props.screenSize} />
+
         <Connector  id={this.state.connectorProps[3].elementId} titleText={this.state.connectorProps[3].titleText} descriptiveText={this.state.connectorProps[3].descriptiveText} screenSize={this.props.screenSize}/>
 
-        <SectionTestimonials />
+        <SectionTestimonials screenSize={this.props.screenSize} />
       </div>
     )
   }

@@ -2,34 +2,58 @@ import React, { Component } from 'react';
 
 import './Sections.css';
 
-const SectionProtect = () => {
+const SectionProtect = (props) => {
+  let sectionClass;
+  if(props.screenSize === 'small') {
+    sectionClass = 'section-sm-screen';
+  } else if (props.screenSize === 'large') {
+    sectionClass = '';
+  }
   return (
-    <div className='section protect'>
+    <div className={`section ${sectionClass} protect`}>
       <p>Creating a safe home for you and your family.</p>
       <p>Protecting what matters most.</p>
     </div>
   );
 };
 
-const SectionSafety = () => {
+const SectionSafety = (props) => {
+  let sectionClass;
+  if(props.screenSize === 'small') {
+    sectionClass = 'section-sm-screen';
+  } else if (props.screenSize === 'large') {
+    sectionClass = '';
+  }
   return (
-    <div className='section safety'>
+    <div className={`section ${sectionClass} safety`}>
       <p>Safety - Keep Safe - Safe 'n snug</p>
     </div>
   );
 };
 
-const SectionProducts = () => {
+const SectionProducts = (props) => {
+  let sectionClass;
+  if(props.screenSize === 'small') {
+    sectionClass = 'section-sm-screen';
+  } else if (props.screenSize === 'large') {
+    sectionClass = '';
+  }
   return (
-    <div className='section products'>
+    <div className={`section ${sectionClass} products`}>
       <p>Remote Access</p>
     </div>
   );
 };
 
-const SectionTestimonials = () => {
+const SectionTestimonials = (props) => {
+  let sectionClass;
+  if(props.screenSize === 'small') {
+    sectionClass = 'section-sm-screen';
+  } else if (props.screenSize === 'large') {
+    sectionClass = '';
+  }
     return (
-      <div className='section testimonials'>
+      <div className={`section ${sectionClass} testimonials`}>
         <p>Testimonials</p>
       </div>
     );
