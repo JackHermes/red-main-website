@@ -37,8 +37,13 @@
 }
 
 .color-boxes {
+  display: flex;
+  height: 500px;
+}
+
+.color-boxes-sm {
   display: grid;
-  /* height: 500px; */
+  height: 50em;
 }
 
 .color-box {
@@ -46,7 +51,12 @@
   border: black;
   display: flex;
   justify-content: center;
-  /* width: 25%; */
+  width: 25%;
+}
+
+.color-box-sm {
+  height: 10em;
+  width: auto;
 }
 
 .box-one {

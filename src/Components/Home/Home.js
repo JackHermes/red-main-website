@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-
-import Connector from '../Common/Connector.js';
 import { isInViewport, debounce } from '../../HelperFunctions.js';
+
+import { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionTestimonials } from '../Common/Sections.js';
+import Connector from '../Common/Connector.js';
 import './Home.css';
 import './Home-sm.css';
-import '../Common/Sections.css';
 
 export default class Home extends Component {
 
@@ -16,24 +16,25 @@ export default class Home extends Component {
       // Content for each connector component
       connectorProps: [
         {
+          // assign id to fade in this specific block
+          elementId: 'connector1',
           titleText: 'Connector text',
-          descriptiveText: 'Descriptive text goes here.',
-          elementId: 'connector1'
+          descriptiveText: 'Descriptive text goes here.'
         },
         {
+          elementId: 'connector2',
           titleText: 'Connector text',
-          descriptiveText: 'Descriptive text goes here.',
-          elementId: 'connector2'
+          descriptiveText: 'Descriptive text goes here.'
         },
         {
+          elementId: 'connector3',
           titleText: 'Connector text',
-          descriptiveText: 'Descriptive text goes here.',
-          elementId: 'connector3'
+          descriptiveText: 'Descriptive text goes here.'
         },
         {
+          elementId: 'connector4',
           titleText: 'Connector text',
-          descriptiveText: 'Descriptive text goes here.',
-          elementId: 'connector4'
+          descriptiveText: 'Descriptive text goes here.'
         }
       ]
     }
@@ -48,6 +49,7 @@ export default class Home extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
 // check if each connector component is visible
+// when it is, fade it in
   handleScroll(event) {
     if(this.state.stopCheckingForFadeIn > 0) {
       debounce(
@@ -68,30 +70,22 @@ export default class Home extends Component {
   render() {
     return (
       <div className='main-content'>
-        <div className='section protect'>
-          <p>Creating a safe home for you and your family.</p>
-          <p>Protecting what matters most.</p>
-        </div>
+
+        <SectionProtect />
+
         <Connector  id={this.state.connectorProps[0].elementId} titleText={this.state.connectorProps[0].titleText} descriptiveText={this.state.connectorProps[0].descriptiveText} screenSize={this.props.screenSize}/>
-        <div className='section safety'>
-          <p>Safety - Keep Safe - Safe 'n snug</p>
-        </div>
+
+        <SectionSafety />
+
         <Connector  id={this.state.connectorProps[1].elementId} titleText={this.state.connectorProps[1].titleText} descriptiveText={this.state.connectorProps[1].descriptiveText} screenSize={this.props.screenSize}/>
-        <div className='section products'>
-          <p>Remote Access</p>
-        </div>
+
+        <SectionProducts />
+
         <Connector  id={this.state.connectorProps[2].elementId} titleText={this.state.connectorProps[2].titleText} descriptiveText={this.state.connectorProps[2].descriptiveText} screenSize={this.props.screenSize}/>
-        <div className='section color-boxes'>
-          <div className='color-box box-one'>Thing One</div>
-          <div className='color-box box-two'>Thing Two</div>
-          <div className='color-box box-three'>Thing Three</div>
-          <div className='color-box box-four'>Thing Four</div>
-          <div className='color-box box-five'>Thing Five</div>
-        </div>
+        <ColorBoxes screenSize={this.props.screenSize} />
         <Connector  id={this.state.connectorProps[3].elementId} titleText={this.state.connectorProps[3].titleText} descriptiveText={this.state.connectorProps[3].descriptiveText} screenSize={this.props.screenSize}/>
-        <div className='section testimonials'>
-          <p>Testimonials</p>
-        </div>
+
+        <SectionTestimonials />
       </div>
     )
   }
