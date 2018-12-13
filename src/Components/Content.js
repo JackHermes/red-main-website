@@ -8,14 +8,24 @@ import Products from './Products/Products.js';
 import Services from './Services/Services.js';
 
 const Content = (props) => {
+
+  let mainClass, footerClass;
+  if(props.screenSize === 'small') {
+    mainClass = 'main main-sm-screen';
+    footerClass = 'footer footer-sm-screen';
+  } else {
+    mainClass = 'main';
+    footerClass = 'footer';
+  }
+
     return (
-      <div className='main'>
+      <div className={mainClass}>
         <Route exact path='/' render={() => <Home screenSize={props.screenSize} />}/>
         <Route exact path='/products' component={Products} />
         <Route exact path='/services' component={Services} />
         <Route exact path='/about' component={About} />
         <Route exact path='/colors' component={Colors}/>
-        <div className='footer'>Footer</div>
+        <div className={footerClass}>Footer</div>
       </div>
     )
 };

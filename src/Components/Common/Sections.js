@@ -5,12 +5,12 @@ import './Sections.css';
 const SectionProtect = (props) => {
   let sectionClass;
   if(props.screenSize === 'small') {
-    sectionClass = 'section-sm-screen';
+    sectionClass = 'section-sm-screen protect-sm-screen';
   } else if (props.screenSize === 'large') {
     sectionClass = '';
   }
   return (
-    <div className={`section ${sectionClass} protect`}>
+    <div className={`section protect ${sectionClass}`}>
       <p>Creating a safe home for you and your family.</p>
       <p>Protecting what matters most.</p>
     </div>
@@ -20,12 +20,12 @@ const SectionProtect = (props) => {
 const SectionSafety = (props) => {
   let sectionClass;
   if(props.screenSize === 'small') {
-    sectionClass = 'section-sm-screen';
+    sectionClass = 'section-sm-screen safety-sm-screen';
   } else if (props.screenSize === 'large') {
     sectionClass = '';
   }
   return (
-    <div className={`section ${sectionClass} safety`}>
+    <div className={`section safety ${sectionClass}`}>
       <p>Safety - Keep Safe - Safe 'n snug</p>
     </div>
   );
@@ -34,12 +34,12 @@ const SectionSafety = (props) => {
 const SectionProducts = (props) => {
   let sectionClass;
   if(props.screenSize === 'small') {
-    sectionClass = 'section-sm-screen';
+    sectionClass = 'section-sm-screen products-sm-screen';
   } else if (props.screenSize === 'large') {
     sectionClass = '';
   }
   return (
-    <div className={`section ${sectionClass} products`}>
+    <div className={`section products ${sectionClass}`}>
       <p>Remote Access</p>
     </div>
   );
@@ -48,12 +48,12 @@ const SectionProducts = (props) => {
 const SectionTestimonials = (props) => {
   let sectionClass;
   if(props.screenSize === 'small') {
-    sectionClass = 'section-sm-screen';
+    sectionClass = 'section-sm-screen testimonials-sm-screen';
   } else if (props.screenSize === 'large') {
     sectionClass = '';
   }
     return (
-      <div className={`section ${sectionClass} testimonials`}>
+      <div className={`section testimonials ${sectionClass}`}>
         <p>Testimonials</p>
       </div>
     );

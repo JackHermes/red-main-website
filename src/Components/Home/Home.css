@@ -2,7 +2,7 @@
 .main-content {
   display: grid;
   grid-template-columns: inherit;
-  grid-template-rows: repeat(20, 1fr);
+  /* grid-template-rows: repeat(20, 1fr); */
   grid-column: 1 / 11;
   /* grid-row: 2 / 26; */
 }

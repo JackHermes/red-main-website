@@ -29,24 +29,48 @@
 
 .protect {
   background-image: url('../../img/girl-dog-big.jpg');
-  height: 265px;
   /* gap for 'collapsing' navbar   */
   margin-top: 6.5em;
 }
 
+.protect-sm-screen {
+  height: 265px;
+}
+
+.protect-sm-screen > p {
+  color: white;
+}
+
 .safety {
   background-image: url('../../img/mother-baby.jpg');
+}
+
+.safety-sm-screen {
   height: 275px;
+}
+
+.safety-sm-screen > p {
+  color: white;
 }
 
 .products {
   background-image: url('https://media.front.xoedge.com/images/3bff8536-3d16-4407-b6f7-72cbedfedfba~rs_1080.h');
   color: black;
+}
+
+.products-sm-screen {
   height: 275px;
+}
+
+.products-sm-screen > p {
+  color: white;
 }
 
 .testimonials {
   background-image: url('../../img/girl-dog-food.jpg');
+}
+
+.testimonials-sm-screen {
   height: 275px;
 }
 
@@ -56,6 +80,7 @@
 }
 
 .color-boxes-sm {
+  color: white;
   display: grid;
   height: 50em;
 }
