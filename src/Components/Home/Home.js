@@ -51,19 +51,29 @@ export default class Home extends Component {
 // check if each connector component is visible
 // when it is, fade it in
   handleScroll(event) {
+    // After all 4 have faded in, stop checking
     if(this.state.stopCheckingForFadeIn > 0) {
+
       debounce(
         this.state.connectorProps.forEach(
           (obj, index) => {
             let containerTextElement = document.getElementById(obj.elementId);
-
+// check if in view and not faded in
             if(isInViewport(containerTextElement) && !containerTextElement.classList.contains('fadeIn')) {
-              containerTextElement.className += ' fadeIn';
+              // containerTextElement.classList.remove('fadeOut');
+              // then fade it in
+              containerTextElement.classList.add('fadeIn');
               this.setState({stopCheckingForFadeIn: this.state.stopCheckingForFadeIn - 1})
             }
+            // else if(isInViewport(containerTextElement) && !containerTextElement.classList.contains('fadeOut')) {
+            //   // containerTextElement.classList.remove('fadeIn');
+            //   // otherwise, swap fadeIn class for fadeOut class
+            //   containerTextElement.classList.add('fadeOut');
+            // }
           }
         ), 250
       )
+
     }
   }
 

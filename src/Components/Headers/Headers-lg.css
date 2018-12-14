@@ -1,8 +1,9 @@
 .header-lg {
+  align-items: center;
   background-color: white;
   display: flex;
   height: 4em;
-  justify-content: start;
+  justify-content: center;
   padding-bottom: 1em;
   padding-top: 1em;
   position: fixed;
@@ -12,16 +13,34 @@
 }
 
 .logo-lg {
+  position: absolute;
+  left: 2em;
+  top: 1em;
   width: 13em;
 }
 
 .navigation-lg {
+  display: grid;
   font-size: large;
+  grid-template-columns: repeat(11, 1fr);
 }
 
 .navigation-lg > a {
   margin-right: 1em;
   margin-left: 1em;
+}
+
+.nav-products {
+  grid-column: 3;
+}
+
+.nav-about {
+  grid-column: 5 / 6;
+  width: 12em;
+}
+
+.nav-colors {
+  /* grid-column: 7; */
 }
 
 .contact-us-box-lg {

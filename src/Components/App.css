@@ -16,7 +16,16 @@ a, a:visited {
 
 a:hover {
   color: #d42320;
+  font-weight: bolder;
 }
+
+/* a::after {
+  content: attr(data-text);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+} */
 
 .main {
   color: white;
