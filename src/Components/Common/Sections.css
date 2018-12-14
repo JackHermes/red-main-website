@@ -30,11 +30,13 @@
 .protect {
   background-image: url('../../img/girl-dog-big.jpg');
   /* gap for 'collapsing' navbar   */
-  margin-top: 6.5em;
+  /* now only for positioning: collapsing to be handled by navbar */
+  margin-top: 5em;
 }
 
 .protect-sm-screen {
   height: 265px;
+  margin-top: 4em;
 }
 
 .protect-sm-screen > p {
