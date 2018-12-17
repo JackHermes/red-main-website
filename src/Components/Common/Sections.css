@@ -57,7 +57,7 @@
 
 .products {
   background-image: url('https://media.front.xoedge.com/images/3bff8536-3d16-4407-b6f7-72cbedfedfba~rs_1080.h');
-  color: black;
+  color: #190404;
 }
 
 .products-sm-screen {
@@ -89,10 +89,10 @@
 
 .color-box {
   align-items: center;
-  border: black;
+  border: #190404;
   display: flex;
   justify-content: center;
-  width: 25%;
+  width: 20%;
 }
 
 .color-box-sm {

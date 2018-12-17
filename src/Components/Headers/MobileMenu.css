@@ -12,7 +12,7 @@
 }
 .bar {
   position: relative;
-  background-color: black;
+  background-color: #190404;
   height: 0.2em;
   margin: 0.2em;
   width: 1.5em;
@@ -52,7 +52,7 @@
   align-items: flex-start;
   background-color: lightgray;
   border-radius: 5%;
-  box-shadow: -0.1em 0.1em 0.5em black;
+  box-shadow: -0.1em 0.1em 0.5em #190404;
   display: flex;
   flex-wrap: wrap;
   height: 14em;
