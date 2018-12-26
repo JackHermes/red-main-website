@@ -50,3 +50,8 @@ a:hover {
 .footer-sm-screen {
   grid-row: 28 / 30;
 }
+/* print background-image by default */
+@media print
+{
+    * {-webkit-print-color-adjust:exact;}
+}
