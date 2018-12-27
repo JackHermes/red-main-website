@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 
 import About from './About/About.js';
 import Colors from './Colors.js';
+import { Footer } from './Common/Footer.js';
 import Home from './Home/Home.js';
 import Products from './Products/Products.js';
 import Services from './Services/Services.js';
@@ -25,7 +26,7 @@ const Content = (props) => {
         <Route exact path='/services' component={Services} />
         <Route exact path='/about' component={About} />
         <Route exact path='/colors' component={Colors}/>
-        <div className={footerClass}>Footer</div>
+        <Footer class={footerClass}/>
       </div>
     )
 };
