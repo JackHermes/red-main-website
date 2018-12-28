@@ -15,8 +15,7 @@ export default class Home extends Component {
       stopCheckingForFadeIn: 4,
       // Content for each connector component
       connectorProps: [
-        {
-          // assign id to fade in this specific block
+        { // assign id to fade in this specific block
           elementId: 'connector1',
           titleText: 'Connector text',
           descriptiveText: 'Descriptive text goes here.'

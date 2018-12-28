@@ -32,24 +32,15 @@ a:hover {
   display: grid;
   grid-row: 2 / 51;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(51, 149px);
+  grid-template-rows: repeat(50, 149px);
 }
 
 .main-sm-screen {
   /* TODO */
-  grid-template-rows: repeat(29, 149px);
+  grid-row: 2 / 51;
+  grid-template-rows: repeat(28, 149px);
 }
 
-.footer {
-  background-color: #003366;
-  grid-column: 1 / 11;
-  grid-row: 49 / 53 ;
-  /* z-index: 2; */
-}
-
-.footer-sm-screen {
-  grid-row: 28 / 30;
-}
 /* print background-image by default */
 @media print
 {

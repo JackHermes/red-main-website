@@ -7,7 +7,7 @@ let isInViewport = (element) => {
   return (
     boundingBox.top >= 0 &&
     boundingBox.left >= 0 &&
-    boundingBox.bottom <= (window.innerHeight || documentElement.clientHeight) &&
+    boundingBox.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
     boundingBox.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
