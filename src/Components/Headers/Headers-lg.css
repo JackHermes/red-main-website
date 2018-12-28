@@ -35,7 +35,7 @@
 }
 
 .nav-about {
-  grid-column: 5 / 6;
+  /* grid-column: 5 / 6; */
   width: 12em;
 }
 

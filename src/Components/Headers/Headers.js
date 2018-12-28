@@ -25,7 +25,7 @@ const LargeScreenHeader = () => {
       <Link to='/'><img className='logo-lg' src={logo} /></Link>
       <div className='navigation-lg'>
         <Link to='/products' className='nav-products'>Products</Link>
-        <Link to='/services' className='nav-services'>Services</Link>
+        {/*<Link to='/services' className='nav-services'>Services</Link>*/}
         <Link to='/about' className='nav-about'>What are We About?</Link>
         <Link to='/colors' className='nav-colors'>Colors</Link>
       </div>
