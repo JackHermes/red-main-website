@@ -55,6 +55,7 @@ const SectionTestimonials = (props) => {
     return (
       <div className={`section testimonials ${sectionClass}`}>
         <p>Testimonials</p>
+        <p>Who's also joined the safety revolution?</p>
       </div>
     );
 };

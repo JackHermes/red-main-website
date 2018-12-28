@@ -1,10 +1,11 @@
 .footer {
   background-color: #003366;
   grid-column: 1 / 11;
-  grid-row: 49 / 53 ;
+  grid-row: 49 / 53;
   /* z-index: 2; */
 }
 
 .footer-sm-screen {
-  grid-row: 28 / 30;
+  grid-row: 28 / 29;
+  /* height: 5em; */
 }
