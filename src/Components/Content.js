@@ -26,7 +26,7 @@ const Content = (props) => {
         {/*<Route exact path='/services' component={Services} />*/}
         <Route exact path='/about' component={About} />
         <Route exact path='/colors' component={Colors}/>
-        <Footer class={footerClass}/>
+        {/*<Footer class={footerClass}/>*/}
       </div>
     )
 };

@@ -24,7 +24,7 @@ const Connector = (props) => {
 
   return (
     <div className={`connector-container ${connectorContainerClassName}`}>
-      <div id={props.id} className={`connector-text ${textClassName}`}>
+      <div id={props.id || 'connector2'} className={`connector-text ${textClassName}`}>
         <p className={`connector-text-big ${bigTextClassName}`}>{props.titleText}</p>
         <p className={`connector-text-little ${littleTextClassName}`}>{props.descriptiveText}</p>
       </div>

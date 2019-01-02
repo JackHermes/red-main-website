@@ -3,6 +3,7 @@ import { isInViewport, debounce } from '../../HelperFunctions.js';
 
 import { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionTestimonials } from '../Common/Sections.js';
 import Connector from '../Common/Connector.js';
+import { Footer } from '../Common/Footer.js';
 import './Home.css';
 import './Home-sm.css';
 
@@ -78,7 +79,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className='main-content'>
+      <div className='home'>
 
         <SectionProtect screenSize={this.props.screenSize} />
 
@@ -97,6 +98,7 @@ export default class Home extends Component {
         <Connector  id={this.state.connectorProps[3].elementId} titleText={this.state.connectorProps[3].titleText} descriptiveText={this.state.connectorProps[3].descriptiveText} screenSize={this.props.screenSize}/>
 
         <SectionTestimonials screenSize={this.props.screenSize} />
+        <Footer class='footer' />
       </div>
     )
   }

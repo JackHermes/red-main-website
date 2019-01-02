@@ -34,14 +34,10 @@ based on #7f1513
     #900502
 */
 
-/* body {
-  background-color: #4c4646;
-  display: flex;
-  font-size: large;
-  font-family: sans-serif;
-  justify-content: center;
-  margin: 0 auto;
-} */
+.color {
+  display: grid;
+  grid-column: 1 / 11;
+}
 
 .colorItem {
   color: white;
@@ -55,7 +51,7 @@ based on #7f1513
 
 .colorsPage {
   font-weight: bold;
-  /* margin: auto; */
+  grid-column: 4 / 6;
 }
 
 .colorSwatches {

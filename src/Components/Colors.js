@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Footer } from './Common/Footer.js';
 import './Colors.css';
+import './Common/Footer.css';
 
 export default class Colors extends Component {
   render() {
@@ -47,16 +49,19 @@ export default class Colors extends Component {
         );
 
     return (
-      <div className="colorsPage">
-        <p>Red Safety Colors</p>
-        <div className="colorSwatches">
-          <ul>
-            {shadeColorBlocks}
-          </ul>
-          <ul>
-            {toneColorBlocks}
-          </ul>
+      <div className="color">
+        <div className="colorsPage">
+          <p>Red Safety Colors</p>
+          <div className="colorSwatches">
+            <ul>
+              {shadeColorBlocks}
+            </ul>
+            <ul>
+              {toneColorBlocks}
+            </ul>
+          </div>
         </div>
+        <Footer class="footer" />
       </div>
     )
   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionTestimonials } from '../Common/Sections.js';
-
+import { Footer } from '../Common/Footer.js';
 
 import './Products.css';
 
@@ -13,9 +13,10 @@ export default class Products extends Component {
   }
   render() {
     return (
-      <div className='main-content' >
-        <SectionTestimonials />
+      <div className='products' >
+        <SectionProducts />
         <ColorBoxes />
+        <Footer class='footer'/>
       </div>
     );
   }
