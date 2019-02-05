@@ -27,9 +27,7 @@
 }
 
 .protect {
-  background-image: url('../../img/girl-dog-big.jpg');
-  /* gap for 'collapsing' navbar   */
-  /* now only for positioning: collapsing to be handled by navbar */
+  background-image: url('../../img/boy-mother-flowers.jpg');
   margin-top: 5em;
 }
 
@@ -43,7 +41,7 @@
 }
 
 .safety {
-  background-image: url('../../img/mother-baby.jpg');
+  background-image: url('../../img/boy-firefighter-back.jpg');
 }
 
 .safety-sm-screen {
@@ -55,7 +53,7 @@
 }
 
 .products {
-  background-image: url('https://media.front.xoedge.com/images/3bff8536-3d16-4407-b6f7-72cbedfedfba~rs_1080.h');
+  background-image: url('../../img/father-son-door.jpg');
   color: #190404;
 }
 
@@ -70,7 +68,7 @@
 .testimonials {
   color: #190404;
   /* background-image: url('../../img/girl-dog-food.jpg'); */
-  background-image: url('https://ndmikkiholicdotcom.files.wordpress.com/2016/06/black-and-white-brick-wall-background-white-brick-wall-image-decoration-picture-white-brick-wall.jpg');
+  background-image: url('../../img/family-new-home.jpg');
 }
 
 .testimonials-sm-screen {
