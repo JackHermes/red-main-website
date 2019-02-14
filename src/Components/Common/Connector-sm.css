@@ -1,22 +1,22 @@
 .connector-text-sm-screen {
-  left: 5em;
-  top: 15em;
+  /* left: 5em;
+  top: 15em; */
 }
 
 .connector-line-sm-screen {
-  height: 25em;
+  /* height: 25em;
   margin-left: 2em;
-  top: -90px;
+  top: -90px; */
 }
 
 .connector-text-little-sm-screen {
-  font-size: normal;
+  /* font-size: normal; */
 }
 
 .connector-text-big-sm-screen {
-  font-size: x-large;
+  /* font-size: x-large; */
 }
 
 .connector-container-sm-screen {
-  height: 30em;
+  /* height: 30em; */
 }
