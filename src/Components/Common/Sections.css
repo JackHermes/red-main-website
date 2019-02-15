@@ -1,49 +1,81 @@
 
 .section {
   background-color: #4c4646;
-  font-size: large;
-  font-weight: bold;
-  height:1000px;
-  /* z-index: 2; */
-  /* style background-images */
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-}
-
-.section > p {
-  font-size: x-large;
-  margin: 3em;
-}
-
-.section-sm-screen {
-  background-size: 130%;
+  color: #d8ab17;
+  font-weight: bold;
+  grid-column: 1 / 11;
+  /* Small Screens */
+  background-position: left;
   display: flex;
-  width: 120%;
+  /* width: 75%; */
 }
 
-.section-sm-screen > p {
-  font-size: small;
+.section-lg-screen {
+  background-position: top;
+  font-size: large;
+  height: 1000px;
+}
+
+.heading {
+  font-size: 3em;
+  /* font-weight: bold; */
+  margin: 0;
+}
+
+.heading-lg-screen {
+
+}
+
+.subheading {
+  font-size: 1.5em;
+  margin: 0;
+  width: 5em;
+}
+
+.subheading-lg-screen {
+  width: auto;
+}
+
+.list {
+  font-size: 1em;
+  padding-top: 1em;
 }
 
 .protect {
   background-image: url('../../img/boy-mother-flowers.jpg');
-  margin-top: 5em;
-}
-
-.protect-sm-screen {
+  /* Small Screens */
+  background-position-x: -7em;
+  background-position-y: -2em;
+  background-size: 35em;
   height: 265px;
   margin-top: 4em;
 }
 
-.protect-sm-screen > p {
-  color: white;
+.protect-lg-screen {
+  background-position: top;
+  background-size: cover;
+  height: 1300px;
+  margin-top: 5em;
+}
+
+
+.protect-text {
+  font-weight: lighter;
+  margin-left: 0.5em;
+}
+
+.protect-text-lg-screen {
+  font-size: 40;
+  margin-left: 3em;
+  padding-top: 2.5em;
 }
 
 .safety {
   background-image: url('../../img/boy-firefighter-back.jpg');
 }
-
+/* --------------------------------- */
 .safety-sm-screen {
   height: 275px;
 }

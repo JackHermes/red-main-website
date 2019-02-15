@@ -3,16 +3,30 @@ import React, { Component } from 'react';
 import './Sections.css';
 
 const SectionProtect = (props) => {
-  let sectionClass;
+  let sectionClass, protectTextClass, headingClass, subheadingClass;
   if(props.screenSize === 'small') {
-    sectionClass = 'section-sm-screen protect-sm-screen';
-  } else if (props.screenSize === 'large') {
+    protectTextClass = '';
     sectionClass = '';
+    headingClass = '';
+    subheadingClass = '';
+  } else if (props.screenSize === 'large') {
+    protectTextClass = 'protect-text-lg-screen';
+    sectionClass = 'section-lg-screen protect-lg-screen';
+    headingClass = 'heading-lg-screen';
+    subheadingClass = 'subheading-lg-screen';
   }
   return (
     <div className={`section protect ${sectionClass}`}>
-      <p>Creating a safe home for you and your family.</p>
-      <p>Protecting what matters most.</p>
+      <div className={`protect-text ${protectTextClass}`}>
+        <p className={`heading ${headingClass}`}>Protect</p>
+        <p className={`subheading ${subheadingClass}`}>what matters most.</p>
+        <ul className='list'>
+          <li>Safety</li>
+          <li>Security</li>
+          <li>Surveillance</li>
+          <li>CPR Training</li>
+        </ul>
+      </div>
     </div>
   );
 };

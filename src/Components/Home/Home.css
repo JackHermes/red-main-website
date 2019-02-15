@@ -1,3 +1,5 @@
 .home {
+  color: #080101;
   grid-column: 1 / 11;
+  /* overflow: hidden; */
 }

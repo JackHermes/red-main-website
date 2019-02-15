@@ -5,7 +5,6 @@ import { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionTest
 import Connector from '../Common/Connector.js';
 import { Footer } from '../Common/Footer.js';
 import './Home.css';
-import './Home-sm.css';
 
 export default class Home extends Component {
 
@@ -18,13 +17,13 @@ export default class Home extends Component {
       connectorProps: [
         { // assign id to fade in this specific block
           elementId: 'connector1',
-          titleText: 'Connector text',
-          descriptiveText: 'Descriptive text goes here.'
+          titleText: 'Protect Your Loved Ones',
+          descriptiveText: 'Red Safety helps you provide Safety, Security, Surveillance, and CPR Training, so you can keep safe. Call us to get a free quote for your specific needs: (888)557-5167'
         },
         {
           elementId: 'connector2',
           titleText: 'Connector text',
-          descriptiveText: 'Descriptive text goes here.'
+          descriptiveText: 'Red Safety helps you provide Safety, Security, Surveillance, and CPR Training, so you can keep safe. Call us to get a free quote for your specific needs: (888)557-5167'
         },
         {
           elementId: 'connector3',

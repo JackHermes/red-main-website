@@ -1,22 +1,29 @@
-.connector-text-lg-screen {
-  left: 35em;
-  top: 15em;
+.connector-container-lg-screen {
+  height: 40em;
 }
 
 .connector-line-lg-screen {
   height: 37em;
   margin-left: 16.8em;
+  margin-top: 1em;
   top: -125px;
+  width: 0.25em;
 }
 
-.connector-text-little-lg-screen {
-  /* font-size: normal; */
+.connector-bullet-lg-screen {
+  height: 1.75em;
+  width: 1.75em;
+}
+
+.connector-text-lg-screen {
+  left: 35em;
+  top: 15em;
+  width: 50em;
 }
 
 .connector-text-big-lg-screen {
   font-size: xx-large;
 }
-
-.connector-container-lg-screen {
-  height: 40em;
+.connector-text-little-lg-screen {
+  font-size: large;
 }

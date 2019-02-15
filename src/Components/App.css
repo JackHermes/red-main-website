@@ -3,7 +3,7 @@ Fonts
 DIN condensed - titles, bullets, content
 Helvetica - submission forms
 Times New Roman - pg 5, traditional home
-avenir next - pg 8 labels, next pg no more execuses
+avenir next - pg 8 labels, next pg 'no more execuses'
 */
 
 html, body {
@@ -27,20 +27,14 @@ a:hover {
   font-weight: bolder;
 }
 
-/* a::after {
-  content: attr(data-text);
-  font-weight: bold;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-} */
+ul {
+  list-style-type: none;
+}
 
 .main {
   color: white;
   display: grid;
-  /* grid-row: 2 / 51; */
   grid-template-columns: repeat(9, 1fr);
-  /* grid-template-rows: repeat(49, 149px); */
 }
 
 .main-sm-screen {
@@ -48,16 +42,6 @@ a:hover {
   /* grid-row: 2 / 51;
   grid-template-rows: repeat(28, 149px); */
 }
-
-/* .main-content { */
-  /* display: grid; */
-  /* grid-template-columns: inherit; */
-  /* grid-column: 1 / 11; */
-
-  /* grid-template-columns: repeat(9, 1fr); */
-  /* grid-template-rows: repeat(20, 1fr); */
-  /* grid-row: 2 / 26; */
-/* } */
 
 /* print background-image by default */
 @media print
