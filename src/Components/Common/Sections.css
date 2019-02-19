@@ -6,6 +6,7 @@
   color: #d8ab17;
   font-weight: bold;
   grid-column: 1 / 11;
+
   /* Small Screens */
   background-position: left;
   display: flex;
@@ -16,6 +17,22 @@
   background-position: top;
   font-size: large;
   height: 1000px;
+}
+
+.background-blue {
+  background-color: rgba(40%,70.2%,100%,50%);
+  /* background-color: #b3d9ff; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px 7px rgba(40%,70.2%,100%,50%);
+  /* opacity: .5; */
+  /* text-shadow: -1px 0 #4c4646, 0 1px #4c4646, 1px 0 #4c4646, 0 -1px #4c4646; */
+}
+
+.background-white {
+  /* background-color: rgba(76.5%,12.5%,11.4%,30%); */
+  box-shadow: 0px 0px 14px 14px rgba(100%, 100%, 100%, 75%);
+  background-color: rgba(100%, 100%, 100%, 75%);
+  border-radius: 10px;
 }
 
 .heading {
@@ -31,16 +48,35 @@
 .subheading {
   font-size: 1.5em;
   margin: 0;
+  margin-top: 0.2em;
   width: 5em;
+}
+
+.heading-lg-screen {
+
+}
+
+.list {
+  font-size: 1em;
+  margin-left: 3em;
+  margin-top: 1.25em;
+  padding: 0;
+  /* padding-top: 1em; */
 }
 
 .subheading-lg-screen {
   width: auto;
 }
 
-.list {
-  font-size: 1em;
-  padding-top: 1em;
+.section-text {
+  font-weight: lighter;
+  margin-left: 0.5em;
+}
+
+.section-text-lg-screen {
+  font-size: 40;
+  margin-left: 3em;
+  padding-top: 2.5em;
 }
 
 .protect {
@@ -74,29 +110,27 @@
 
 .safety {
   background-image: url('../../img/boy-firefighter-back.jpg');
-}
-/* --------------------------------- */
-.safety-sm-screen {
-  height: 275px;
-}
-
-.safety-sm-screen > p {
-  color: white;
+  height: 265px;
+  /* Small Screens */
+  background-position-x: -7em;
+  background-position-y: -2em;
+  background-size: 35em;
+  height: 265px;
+  margin-top: 2em;
 }
 
 .products {
   background-image: url('../../img/father-son-door.jpg');
   color: #190404;
-}
+  margin-top: 2em;
 
-.products-sm-screen {
   height: 275px;
 }
 
-.products-sm-screen > p {
-  color: white;
+.products-lg-screen {
 }
 
+/* --------------------------------- */
 .testimonials {
   color: #190404;
   /* background-image: url('../../img/girl-dog-food.jpg'); */

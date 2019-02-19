@@ -5,22 +5,19 @@ import './Sections.css';
 const SectionProtect = (props) => {
   let sectionClass, protectTextClass, headingClass, subheadingClass;
   if(props.screenSize === 'small') {
-    protectTextClass = '';
-    sectionClass = '';
-    headingClass = '';
-    subheadingClass = '';
+    sectionClass = 'section-sm-screen protect-sm-screen';
   } else if (props.screenSize === 'large') {
-    protectTextClass = 'protect-text-lg-screen';
+    protectTextClass = 'section-text-lg-screen';
     sectionClass = 'section-lg-screen protect-lg-screen';
     headingClass = 'heading-lg-screen';
     subheadingClass = 'subheading-lg-screen';
   }
   return (
     <div className={`section protect ${sectionClass}`}>
-      <div className={`protect-text ${protectTextClass}`}>
+      <div className={`section-text ${protectTextClass}`}>
         <p className={`heading ${headingClass}`}>Protect</p>
-        <p className={`subheading ${subheadingClass}`}>what matters most.</p>
-        <ul className='list'>
+        <p className={`background-white subheading ${subheadingClass}`}>what matters most.</p>
+        <ul className='background-white list'>
           <li>Safety</li>
           <li>Security</li>
           <li>Surveillance</li>
@@ -34,13 +31,16 @@ const SectionProtect = (props) => {
 const SectionSafety = (props) => {
   let sectionClass;
   if(props.screenSize === 'small') {
-    sectionClass = 'section-sm-screen safety-sm-screen';
+    sectionClass = '';
   } else if (props.screenSize === 'large') {
     sectionClass = '';
   }
   return (
     <div className={`section safety ${sectionClass}`}>
-      <p>Safety - Keep Safe - Safe 'n snug</p>
+      <div className='section-text'>
+        <p className='background-white heading'>Safety</p>
+        <p className='background-white subheading'>the new standard in home security</p>
+      </div>
     </div>
   );
 };
@@ -48,13 +48,16 @@ const SectionSafety = (props) => {
 const SectionProducts = (props) => {
   let sectionClass;
   if(props.screenSize === 'small') {
-    sectionClass = 'section-sm-screen products-sm-screen';
-  } else if (props.screenSize === 'large') {
     sectionClass = '';
+  } else if (props.screenSize === 'large') {
+    sectionClass = 'section-lg-screen products-lg-screen';
   }
   return (
     <div className={`section products ${sectionClass}`}>
-      <p>Remote Access</p>
+      <div className='section-text'>
+        <p className='background-white heading'>Products</p>
+        <p className='background-white subheading'>Subheading text</p>
+      </div>
     </div>
   );
 };

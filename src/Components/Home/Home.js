@@ -22,8 +22,8 @@ export default class Home extends Component {
         },
         {
           elementId: 'connector2',
-          titleText: 'Connector text',
-          descriptiveText: 'Red Safety helps you provide Safety, Security, Surveillance, and CPR Training, so you can keep safe. Call us to get a free quote for your specific needs: (888)557-5167'
+          titleText: 'Keep safe',
+          descriptiveText: 'We work to Educate, Equip, and Protect every home in our community. Firefighters founded RED Safety, and true to our founding we provide our customers peace of mind through Education, Training, and the highest quality Safety Equipment. Contact us to set up your yearly fire safety checkup.'
         },
         {
           elementId: 'connector3',
@@ -92,12 +92,12 @@ export default class Home extends Component {
 
         <Connector  id={this.state.connectorProps[2].elementId} titleText={this.state.connectorProps[2].titleText} descriptiveText={this.state.connectorProps[2].descriptiveText} screenSize={this.props.screenSize}/>
 
-        <ColorBoxes screenSize={this.props.screenSize} />
+        {/*<ColorBoxes screenSize={this.props.screenSize} />*/}
 
-        <Connector  id={this.state.connectorProps[3].elementId} titleText={this.state.connectorProps[3].titleText} descriptiveText={this.state.connectorProps[3].descriptiveText} screenSize={this.props.screenSize}/>
+        {/*<Connector  id={this.state.connectorProps[3].elementId} titleText={this.state.connectorProps[3].titleText} descriptiveText={this.state.connectorProps[3].descriptiveText} screenSize={this.props.screenSize}/>*/}
 
-        <SectionTestimonials screenSize={this.props.screenSize} />
-        <Footer class='footer' />
+        {/*}<SectionTestimonials screenSize={this.props.screenSize} />
+        <Footer class='footer' />*/}
       </div>
     )
   }

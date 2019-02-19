@@ -5,7 +5,7 @@
   grid-column: 1 / 11;
   z-index: 1;
   /* Small Screens */
-  height: 25em;
+  height: 20em;
 }
 
 .connector-line {
@@ -20,7 +20,7 @@
   /* Small Screens */
   height: 20em;
   margin-left: 1em;
-  top: -180px;
+  top: -15em  ;
   width: 0.1em;
 }
 
@@ -67,7 +67,7 @@
   opacity: 0;
   /* Small Screens */
   left: 3em;
-  top: 8em;
+  top: 1em;
   width: 15em;
 }
 
