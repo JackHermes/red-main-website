@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { isInViewport, debounce } from '../../HelperFunctions.js';
 
-import { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionTestimonials } from '../Common/Sections.js';
+import { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionAutomation, SectionCPR } from '../Common/Sections.js';
 import Connector from '../Common/Connector.js';
 import { Footer } from '../Common/Footer.js';
 import './Home.css';
@@ -27,13 +27,18 @@ export default class Home extends Component {
         },
         {
           elementId: 'connector3',
-          titleText: 'Connector text',
-          descriptiveText: 'Descriptive text goes here.'
+          titleText: 'Securing your space',
+          descriptiveText: 'Encryption that protects you from hackers, Backup power supply for unexpected power loss, Customized for you, Integrated systems put you in control. All in one easy-to-use app.'
         },
         {
           elementId: 'connector4',
-          titleText: 'Connector text',
-          descriptiveText: 'Descriptive text goes here.'
+          titleText: 'Streamline your life',
+          descriptiveText: 'With our expert-installed smart home equipment such as [brand] doorbells, garage controls, lights and cameras, you can spend valuable time elsewhere, on more important things.'
+        },
+        {
+          elementId: 'connector5',
+          titleText: 'CPR',
+          descriptiveText: 'Fill CPR'
         }
       ]
     }
@@ -94,10 +99,15 @@ export default class Home extends Component {
 
         {/*<ColorBoxes screenSize={this.props.screenSize} />*/}
 
-        {/*<Connector  id={this.state.connectorProps[3].elementId} titleText={this.state.connectorProps[3].titleText} descriptiveText={this.state.connectorProps[3].descriptiveText} screenSize={this.props.screenSize}/>*/}
+        <SectionAutomation screenSize={this.props.screenSize} />
 
-        {/*}<SectionTestimonials screenSize={this.props.screenSize} />
-        <Footer class='footer' />*/}
+        <Connector  id={this.state.connectorProps[3].elementId} titleText={this.state.connectorProps[3].titleText} descriptiveText={this.state.connectorProps[3].descriptiveText} screenSize={this.props.screenSize}/>
+
+        <SectionCPR screenSize={this.props.screenSize}/>
+
+        <Connector id={this.state.connectorProps[4].elementId} titleText={this.state.connectorProps[4].titleText} descriptiveText={this.state.connectorProps[4].descriptiveText} screenSize={this.props.screenSize}/>
+
+        {/*<Footer class='footer' />*/}
       </div>
     )
   }

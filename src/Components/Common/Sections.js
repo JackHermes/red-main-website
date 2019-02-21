@@ -55,27 +55,42 @@ const SectionProducts = (props) => {
   return (
     <div className={`section products ${sectionClass}`}>
       <div className='section-text'>
-        <p className='background-white heading'>Products</p>
-        <p className='background-white subheading'>Subheading text</p>
+        <p className='background-white heading'>Secure</p>
+        <p className='background-white subheading'>your home--and the valuables it contains</p>
       </div>
     </div>
   );
 };
 
-const SectionTestimonials = (props) => {
+const SectionAutomation = (props) => {
   let sectionClass;
   if(props.screenSize === 'small') {
-    sectionClass = 'section-sm-screen testimonials-sm-screen';
-  } else if (props.screenSize === 'large') {
     sectionClass = '';
+  } else if (props.screenSize === 'large') {
+    sectionClass = 'automation-lg-screen';
   }
     return (
-      <div className={`section testimonials ${sectionClass}`}>
-        <p>Testimonials</p>
-        <p>Who's also joined the safety revolution?</p>
+      <div className={`section automation ${sectionClass}`}>
+        <div className='section-text'>
+          <p className='background-white heading'>Automate</p>
+          <p className='background-white subheading'>everything, from one app</p>
+        </div>
       </div>
     );
 };
+
+const SectionCPR = (props) => {
+  let sectionClass;
+
+  return (
+    <div className={`section cpr ${sectionClass}`}>
+      <div className='section-text'>
+        <p className='background-white heading'>Get CPR Prepared</p>
+        <p className='background-white subheading'>No more excuses</p>
+      </div>
+    </div>
+  )
+}
 
 const ColorBoxes = (props) => {
   let colorBoxesClass, colorBoxClass;
@@ -99,4 +114,4 @@ const ColorBoxes = (props) => {
   )
 };
 
-export { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionTestimonials };
+export { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionAutomation, SectionCPR };
