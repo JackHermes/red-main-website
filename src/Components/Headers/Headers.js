@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import MobileMenu from './MobileMenu.js';
 import './Headers.css';
-import './Headers-med.css';
 import './Headers-lg.css';
 
 import logo from '../../img/approved-logo.jpg';

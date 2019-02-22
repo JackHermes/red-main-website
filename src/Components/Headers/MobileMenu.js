@@ -53,7 +53,7 @@ export default class MobileMenu extends Component {
             <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/services">Services</Link></li>
             <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/products">Products</Link></li>
             <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/about">What are We About?</Link></li>
-            <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/colors">Colors</Link></li>
+            {/*<li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/colors">Colors</Link></li>*/}
           </ul>
       </div>
     );
