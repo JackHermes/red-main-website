@@ -12,7 +12,7 @@ export default class Home extends Component {
     super(props);
     this.state = {
       // After n elements fade in, stop checking
-      stopCheckingForFadeIn: 4,
+      stopCheckingForFadeIn: 5,
       // Content for each connector component
       connectorProps: [
         { // assign id to fade in this specific block
@@ -37,8 +37,8 @@ export default class Home extends Component {
         },
         {
           elementId: 'connector5',
-          titleText: 'CPR',
-          descriptiveText: 'Fill CPR'
+          titleText: 'Prepare for the unexpected',
+          descriptiveText: 'At RED Safety we believe in providing a whole ecosystem of safety, from our included CPR and First Aid training to disaster planning. It will happen to you, are you prepared? Contact us to set up your future.'
         }
       ]
     }

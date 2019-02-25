@@ -1,4 +1,18 @@
 .products {
-  grid-column: 1 / 11;
-  grid-row: 2 / 4;
+  background-image: url('../../img/kitchen.jpg');
+  color: #d42320;
+  display: block;
+  margin-top: 4em;
+}
+
+.products-text-heading {
+  font-size: 1.75em;
+  font-weight: lighter;
+  width: auto;
+}
+
+.products-text-subheading {
+  font-size: 2.75em;
+  font-weight: lighter;
+  margin-left: 1em;
 }

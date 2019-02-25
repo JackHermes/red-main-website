@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionTestimonials } from '../Common/Sections.js';
+import {  } from '../Common/Sections.js';
 import { Footer } from '../Common/Footer.js';
 
+import '../Common/Sections.css';
 import './Products.css';
 
 export default class Products extends Component {
@@ -11,12 +12,12 @@ export default class Products extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
     return (
-      <div className='products' >
-        <SectionProducts />
-        <ColorBoxes />
-        <Footer class='footer'/>
+      <div className='section products'>
+        <p className='subheading background-white products-text-heading'>Combining Products</p>
+        <p className='heading background-white products-text-subheading'>like no other</p>
       </div>
     );
   }

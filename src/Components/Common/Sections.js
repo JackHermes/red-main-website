@@ -50,10 +50,10 @@ const SectionProducts = (props) => {
   if(props.screenSize === 'small') {
     sectionClass = '';
   } else if (props.screenSize === 'large') {
-    sectionClass = 'section-lg-screen products-lg-screen';
+    sectionClass = 'section-lg-screen products-section-lg-screen';
   }
   return (
-    <div className={`section products ${sectionClass}`}>
+    <div className={`section products-section ${sectionClass}`}>
       <div className='section-text'>
         <p className='background-white heading'>Secure</p>
         <p className='background-white subheading'>your home--and the valuables it contains</p>
