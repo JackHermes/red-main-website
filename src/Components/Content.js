@@ -22,7 +22,7 @@ const Content = (props) => {
     return (
       <div className={mainClass}>
         <Route exact path='/' render={() => <Home screenSize={props.screenSize} />}/>
-        <Route exact path='/products' component={Products} />
+        <Route exact path='/products' render={() => <Products screenSize={props.screenSize}/>} />
         {/*<Route exact path='/services' component={Services} />*/}
         <Route exact path='/about' component={About} />
         <Route exact path='/colors' component={Colors}/>

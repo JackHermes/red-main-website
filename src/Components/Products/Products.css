@@ -1,18 +1,55 @@
 .products {
+  grid-column: 1 / 11;
+  margin-top: 4em;
+}
+
+.products-combining {
   background-image: url('../../img/kitchen.jpg');
   color: #d42320;
   display: block;
-  margin-top: 4em;
+  font-weight: lighter;
 }
 
 .products-text-heading {
   font-size: 1.75em;
-  font-weight: lighter;
   width: auto;
 }
 
 .products-text-subheading {
   font-size: 2.75em;
-  font-weight: lighter;
   margin-left: 1em;
+}
+
+.products-finally {
+  background-color: white;
+  color: #1a8dff;
+  display: block;
+}
+
+.no-margin {
+  font-weight: lighter;
+  margin: 0;
+}
+/* override opacity on this page */
+.connector-text {
+  opacity: 1;
+}
+
+.products-redefine {
+  background-image: url('../../img/boy-firefighter-front.jpg');
+  display: block;
+}
+
+.redefine-security {
+  color: #d42320;
+  margin-left: 3em;
+  margin-top: 2em;
+  font-weight: lighter;
+}
+
+.bring-it-on-back {
+  color: #4c4646;
+  font-weight: lighter;
+  margin-left: 4em;
+  width: 10em;
 }
