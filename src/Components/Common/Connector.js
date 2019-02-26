@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './Connector.css';
 import './Connector-lg.css';
 
-
+// receives props screenSize ('small', 'large'), id, titleText, descriptiveText
 const Connector = (props) => {
   // change styles based on screen size
   let textClassName, lineClassName, bigTextClassName, littleTextClassName, connectorContainerClassName, connectorBulletClassName;
@@ -25,7 +25,7 @@ const Connector = (props) => {
 
   return (
     <div className={`connector-container ${connectorContainerClassName}`}>
-      <div id={props.id || 'connector2'} className={`connector-text ${textClassName}`}>
+      <div id={props.id || 'connector'} className={`connector-text ${textClassName}`}>
         <p className={`connector-text-big ${bigTextClassName}`}>{props.titleText}</p>
         <p className={`connector-text-little ${littleTextClassName}`}>{props.descriptiveText}</p>
       </div>
