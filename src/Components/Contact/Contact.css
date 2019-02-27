@@ -1,0 +1,19 @@
+.contact-us {
+  color: black;
+  grid-column: 1 / 11;
+  margin-top: 4em;
+}
+
+.four-legs-safety {
+  background-image: url('../../img/baby-dog-floor.jpg');
+  display: block;
+}
+
+.contact-info {
+}
+
+.contact-info-text {
+  font-size: 1.5em;
+  font-weight: lighter;
+  width: 10em;
+}
