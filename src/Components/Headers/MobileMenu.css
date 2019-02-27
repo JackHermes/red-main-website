@@ -1,4 +1,3 @@
-
 .mobile-menu {
   display: flex;
   z-index: 100;
@@ -43,7 +42,7 @@
 
 
 /*  TODO */
-.footer-sm-screen {
+.footer-lg-screen {
   /* grid-row: 28 / 29; */
   /* height: 5em; */
 }
@@ -68,7 +67,7 @@
   box-shadow: -0.1em 0.1em 0.5em #190404;
   display: block;
   /* flex-wrap: wrap; */
-  height: 14em;
+  height: 10em;
   margin: 0em;
   padding-left: 0.5em;
   padding-top: 1em;
@@ -92,6 +91,10 @@
   padding: 0.75em;
   list-style-type: none;
   width: 6em;
+}
+
+.mobile-menu-dock-item > a:hover {
+  font-weight: lighter;
 }
 
 /* Use a wrapper to prevent browser from increasing doc width */

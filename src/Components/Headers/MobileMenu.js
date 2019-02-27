@@ -18,7 +18,7 @@ export default class MobileMenu extends Component {
   }
 
   handleClick() {
-    console.log('CLICK.', this.state);
+    // console.log('CLICK.', this.state);
     if(this.state.menuDisplayed) {
       // start with dock hidden
       this.setState({
@@ -50,9 +50,9 @@ export default class MobileMenu extends Component {
         </div>
           <ul className={this.state.dock}>
             <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/">Home</Link></li>
-            <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/services">Services</Link></li>
             <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/products">Products</Link></li>
-            <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/about">What are We About?</Link></li>
+            <li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/contact">Contact Us</Link></li>
+          {/*<li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/about">What are We About?</Link></li>*/}
             {/*<li className='mobile-menu-dock-item' onClick={this.handleClick}><Link to="/colors">Colors</Link></li>*/}
           </ul>
       </div>

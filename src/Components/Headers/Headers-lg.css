@@ -22,7 +22,7 @@
 .navigation-lg {
   display: grid;
   font-size: large;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(20, 4em);
 }
 
 .navigation-lg > a {
@@ -31,7 +31,11 @@
 }
 
 .nav-products {
-  grid-column: 3;
+  grid-column: 2 / 3;
+}
+
+.nav-contact {
+  grid-column: 4 / 7;
 }
 
 .nav-about {
@@ -39,9 +43,9 @@
   width: 12em;
 }
 
-.nav-colors {
-  /* grid-column: 7; */
-}
+/* .nav-colors {
+  grid-column: 7;
+} */
 
 .contact-us-box-lg {
   bottom: auto;

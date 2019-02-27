@@ -33,6 +33,10 @@ export default class Products extends Component {
           <p className='subheading products-text-subheading background-white redefine-security'>Redefining Security</p>
           <p className='heading products-text-heading background-white bring-it-on-back'>we're bringing safety back</p>
         </div>
+        <Connector titleText='Safety is in our name' descriptiveText='We wanted to provide safety, not just security, so we include these items in many of our services' screenSize={this.props.screenSize} />
+        <div>
+          <p>[item images here]</p>
+        </div>
       </div>
     );
   }

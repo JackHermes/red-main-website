@@ -6,7 +6,7 @@ import Colors from './Colors.js';
 import { Footer } from './Common/Footer.js';
 import Home from './Home/Home.js';
 import Products from './Products/Products.js';
-// import Services from './Services/Services.js';
+import Contact from './Contact/Contact.js';
 
 const Content = (props) => {
 
@@ -23,9 +23,9 @@ const Content = (props) => {
       <div className={mainClass}>
         <Route exact path='/' render={() => <Home screenSize={props.screenSize} />}/>
         <Route exact path='/products' render={() => <Products screenSize={props.screenSize}/>} />
-        {/*<Route exact path='/services' component={Services} />*/}
-        <Route exact path='/about' component={About} />
-        <Route exact path='/colors' component={Colors}/>
+        <Route exact path='/services' component={Contact} />
+        {/*<Route exact path='/about' component={About} />*/}
+        {/*<Route exact path='/colors' component={Colors}/>*/}
         {/*<Footer class={footerClass}/>*/}
       </div>
     )
