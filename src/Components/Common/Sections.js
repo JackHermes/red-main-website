@@ -14,10 +14,10 @@ const SectionProtect = (props) => {
   }
   return (
     <div className={`section protect ${sectionClass}`}>
-      <div className={`section-text ${protectTextClass}`}>
+      <div className={`section-text background-white ${protectTextClass} text-outline`}>
         <p className={`heading ${headingClass}`}>Protect</p>
-        <p className={`background-white subheading ${subheadingClass}`}>what matters most.</p>
-        <ul className='background-white list'>
+        <p className={`subheading ${subheadingClass}`}>what matters most.</p>
+        <ul className='list'>
           <li>Safety</li>
           <li>Security</li>
           <li>Surveillance</li>
@@ -39,9 +39,9 @@ const SectionSafety = (props) => {
   }
   return (
     <div className={`section safety ${sectionClass}`}>
-      <div className={`section-text ${safetyTextClass}`}>
-        <p className='background-white heading'>Safety</p>
-        <p className='background-white subheading'>the new standard in home security</p>
+      <div className={`section-text background-dark-yellow ${safetyTextClass} safety-text`}>
+        <p className='heading'>Safety</p>
+        <p className='subheading'>the new standard in home security</p>
       </div>
     </div>
   );
@@ -54,13 +54,13 @@ const SectionProducts = (props) => {
     productsTextClass = '';
   } else if (props.screenSize === 'large') {
     sectionClass = 'section-lg-screen products-section-lg-screen';
-    productsTextClass = 'section-text-lg-screen';
+    productsTextClass = 'section-text-lg-screen products-text-lg-screen';
   }
   return (
     <div className={`section products-section ${sectionClass}`}>
-      <div className={`section-text ${productsTextClass}`}>
-        <p className='background-white heading'>Secure</p>
-        <p className='background-white subheading'>your home--and the valuables it contains</p>
+      <div className={`section-text background-dark-yellow products-text ${productsTextClass}`}>
+        <p className='heading'>Secure</p>
+        <p className='subheading products-subheading'>your home</p>
       </div>
     </div>
   );
@@ -77,9 +77,9 @@ const SectionAutomation = (props) => {
   }
     return (
       <div className={`section automation ${sectionClass}`}>
-        <div className={`section-text ${automationTextClass}`}>
-          <p className='background-white heading'>Automate</p>
-          <p className='background-white subheading'>everything, from one app</p>
+        <div className={`section-text background-white ${automationTextClass}`}>
+          <p className='heading automation-heading'>Automation</p>
+          <p className='subheading automation-subheading'>all in one app</p>
         </div>
       </div>
     );
@@ -96,9 +96,9 @@ const SectionCPR = (props) => {
   }
   return (
     <div className={`section cpr ${sectionClass}`}>
-      <div className={`section-text ${cprTextClass}`}>
-        <p className='background-white heading'>Get CPR Prepared</p>
-        <p className='background-white subheading'>No more excuses</p>
+      <div className={`section-text background-white ${cprTextClass}`}>
+        <p className='heading'>CPR Training</p>
+        <p className='subheading'>Over 10,000 Trained</p>
       </div>
     </div>
   )

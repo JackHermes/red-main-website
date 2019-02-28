@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  color: #d8ab17;
+  color: #b5861d;
   font-weight: bold;
   grid-column: 1 / 11;
   /* Small Screens */
@@ -29,13 +29,19 @@
 }
 
 .background-white {
-  background-color: rgba(100%, 100%, 100%, 75%);
+  background-color: rgba(100%, 100%, 100%, 50%);
   border-radius: 10px;
-  box-shadow: 0px 0px 14px 14px rgba(100%, 100%, 100%, 75%);
+  box-shadow: 0px 0px 14px 14px rgba(100%, 100%, 100%, 50%);
 }
 
 .background-solid-yellow {
-  background-color: #d8ab17;
+  background-color: #b5861d;
+  /* background-color: #d8ab17; */
+}
+
+.text-outline {
+  text-shadow: 0 0 2px white;
+  text-shadow: 0 0 1px #190404;
 }
 
 .heading {
@@ -115,17 +121,57 @@
   background-image: url('../../img/boy-firefighter-back.jpg');
   /* Small Screens */
   margin-top: 1em;
+  color: white;
 }
 
 .safety-text-lg-screen {
   font-size: 40;
-  margin-left: 3em;
-  padding-top: 2.5em;
+
+}
+
+.safety-text {
+  margin-bottom: 4em;
+  margin-top: 0.5em;
+  /* padding: 0.5em; */
 }
 
 .products-section {
   background-image: url('../../img/father-son-door.jpg');
+  color: white;
   margin-top: 2em;
+  /* margin-left: 0.5em;
+  margin-top: .5em;
+  margin-bottom: 1em;
+  padding-left: .5em; */
+}
+
+.products-section-lg-screen {
+}
+
+.products-text {
+  margin-left: 3em;
+  padding-top: 1.75em;
+  margin-top: 2em;
+  margin-left: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 5em;
+  padding-left: .5em;
+  /* padding-right: 1em; */
+
+
+}
+
+.products-subheading {
+  width: 6em;
+  /* padding-left: 1.5em; */
+  /* font-stretch: expanded; */
+  font-size: 1.9em;
+}
+
+.background-dark-yellow {
+  background-color: RGBA(181, 134, 29, .6);
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 14px 14px rgba(100%, 100%, 100%, 65%); */
 }
 
 .products-text-lg-screen {
@@ -134,9 +180,22 @@
 
 .automation {
   background-image: url('../../img/family-new-home.jpg');
+  background-position-y: -1em;
+  color: #3793d1;
 }
 
 .automation-lg-screen {
+}
+
+.automation-heading {
+  margin-left: 0.6em;
+}
+
+.automation-subheading {
+  color: black;
+  margin-left: 6em;
+  margin-top: 0;
+  width: 7em;
 }
 
 .cpr {
