@@ -29,15 +29,17 @@ const SectionProtect = (props) => {
 };
 
 const SectionSafety = (props) => {
-  let sectionClass;
+  let sectionClass, safetyTextClass;
   if(props.screenSize === 'small') {
     sectionClass = '';
+    safetyTextClass = '';
   } else if (props.screenSize === 'large') {
-    sectionClass = '';
+    sectionClass = 'section-lg-screen';
+    safetyTextClass = 'section-text-lg-screen';
   }
   return (
     <div className={`section safety ${sectionClass}`}>
-      <div className='section-text'>
+      <div className={`section-text ${safetyTextClass}`}>
         <p className='background-white heading'>Safety</p>
         <p className='background-white subheading'>the new standard in home security</p>
       </div>
@@ -46,15 +48,17 @@ const SectionSafety = (props) => {
 };
 
 const SectionProducts = (props) => {
-  let sectionClass;
+  let sectionClass, productsTextClass;
   if(props.screenSize === 'small') {
     sectionClass = '';
+    productsTextClass = '';
   } else if (props.screenSize === 'large') {
     sectionClass = 'section-lg-screen products-section-lg-screen';
+    productsTextClass = 'section-text-lg-screen';
   }
   return (
     <div className={`section products-section ${sectionClass}`}>
-      <div className='section-text'>
+      <div className={`section-text ${productsTextClass}`}>
         <p className='background-white heading'>Secure</p>
         <p className='background-white subheading'>your home--and the valuables it contains</p>
       </div>
@@ -63,15 +67,17 @@ const SectionProducts = (props) => {
 };
 
 const SectionAutomation = (props) => {
-  let sectionClass;
+  let sectionClass, automationTextClass;
   if(props.screenSize === 'small') {
     sectionClass = '';
+    automationTextClass = '';
   } else if (props.screenSize === 'large') {
-    sectionClass = 'automation-lg-screen';
+    sectionClass = 'section-lg-screen automation-lg-screen';
+    automationTextClass = 'section-text-lg-screen';
   }
     return (
       <div className={`section automation ${sectionClass}`}>
-        <div className='section-text'>
+        <div className={`section-text ${automationTextClass}`}>
           <p className='background-white heading'>Automate</p>
           <p className='background-white subheading'>everything, from one app</p>
         </div>
@@ -80,11 +86,17 @@ const SectionAutomation = (props) => {
 };
 
 const SectionCPR = (props) => {
-  let sectionClass;
-
+  let sectionClass,  cprTextClass;
+  if(props.screenSize === 'small') {
+    sectionClass = '';
+    cprTextClass = '';
+  } else if (props.screenSize === 'large') {
+    sectionClass = 'section-lg-screen cpr-lg-screen';
+    cprTextClass = 'section-text-lg-screen';
+  }
   return (
     <div className={`section cpr ${sectionClass}`}>
-      <div className='section-text'>
+      <div className={`section-text ${cprTextClass}`}>
         <p className='background-white heading'>Get CPR Prepared</p>
         <p className='background-white subheading'>No more excuses</p>
       </div>

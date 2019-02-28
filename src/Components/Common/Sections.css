@@ -16,8 +16,10 @@
 
 .section-lg-screen {
   background-position: top;
+  background-size: cover;
   font-size: large;
   height: 1000px;
+  margin-top: 5em;
 }
 
 .background-blue {
@@ -115,12 +117,18 @@
   margin-top: 1em;
 }
 
+.safety-text-lg-screen {
+  font-size: 40;
+  margin-left: 3em;
+  padding-top: 2.5em;
+}
+
 .products-section {
   background-image: url('../../img/father-son-door.jpg');
   margin-top: 2em;
 }
 
-.products-section-lg-screen {
+.products-text-lg-screen {
 
 }
 
