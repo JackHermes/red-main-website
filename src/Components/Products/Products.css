@@ -33,6 +33,7 @@
   margin: 0;
 }
 /* override opacity on this page */
+/* TODO add similar fade-in functionality as Home page */
 .connector-text {
   opacity: 1;
 }
@@ -45,7 +46,7 @@
 .redefine-security {
   color: #d42320;
   margin-left: 2em;
-  margin-top: 2em;
+  margin-top: 0;
   font-weight: lighter;
 }
 

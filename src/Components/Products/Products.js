@@ -32,12 +32,12 @@ export default class Products extends Component {
         <Connector titleText='Security Devices' descriptiveText='We believe in quality equipment that does its job without needing to think about it.' screenSize={this.props.screenSize} />
         <div className='section products-finally'>
           <p className='subheading products-text-subheading no-margin'>Finally</p>
-          <p className='heading products-text-heading background-solid-yellow'>everything in one app</p>
+          <p className='heading products-text-heading background-solid-yellow outline-white'>everything in one app</p>
         </div>
         <Connector titleText='Alarm.com' descriptiveText='We are backed by Alarm.com, trusted by millions every day.' screenSize={this.props.screenSize} />
         <div className='section products-redefine'>
           <p className='subheading products-text-subheading background-white redefine-security'>Redefining Security</p>
-          <p className='heading products-text-heading background-white bring-it-on-back'>we're bringing safety back</p>
+          <p className='heading products-text-heading background-white bring-it-on-back'>we're bringing <strong>safety</strong> back</p>
         </div>
         <Connector titleText='Safety is in our name' descriptiveText='We wanted to provide safety, not just security, so we include these items in many of our services' screenSize={this.props.screenSize} />
         <div>
