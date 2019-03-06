@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // import {  } from '../Common/Sections.js';
 import Connector from '../Common/Connector.js';
-import { Footer } from '../Common/Footer.js';
+import { Footer } from '../Footers/Footer.js';
 
 import '../Common/Connector-lg.css';
 import '../Common/Connector.css';

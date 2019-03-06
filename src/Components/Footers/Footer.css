@@ -1,0 +1,22 @@
+.footer {
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: smaller;
+  grid-column: 1 / 11;
+  height: 18em;
+  padding-top: 2em;
+  /* justify-content: center; */
+  /* padding-bottom: 0;
+  margin-bottom: 0; */
+}
+
+.footer-lg-screen {
+  height: 10em;
+}
+
+.footer-text {
+  /* padding-top: 2em; */
+}

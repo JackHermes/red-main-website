@@ -3,6 +3,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import { Content } from './Content.js';
 import { LargeScreenHeader, SmallScreenHeader} from './Headers/Headers.js';
+import { LargeScreenFooter, SmallScreenFooter } from './Footers/Footer.js';
+
 import ScrollToTop from './Common/ScrollToTop.js';
 
 import './App.css';
@@ -41,6 +43,7 @@ export default class App extends Component {
           <ScrollToTop>
             <SmallScreenHeader screenSize='small' />
             <Content screenSize='small' />
+            <SmallScreenFooter screenSize='small' />
           </ScrollToTop>
         </Router>
       )
@@ -50,6 +53,7 @@ export default class App extends Component {
           <ScrollToTop>
             <LargeScreenHeader screenSize='large' />
             <Content screenSize='large' />
+            <LargeScreenFooter screenSize='large' />
           </ScrollToTop>
         </Router>
       )

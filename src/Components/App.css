@@ -6,9 +6,14 @@ Times New Roman - pg 5, traditional home
 avenir next - pg 8 labels, next pg 'no more execuses'
 */
 
+/* For css debugging: */
+/* * {
+  border: solid darkred 1px;
+} */
+
 html, body {
   margin: 0;
-  height: 100%;
+  /* height: 100%; */
 }
 
 body {

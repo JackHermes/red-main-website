@@ -3,7 +3,7 @@ import { isInViewport, debounce } from '../../HelperFunctions.js';
 
 import { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionAutomation, SectionCPR } from '../Common/Sections.js';
 import Connector from '../Common/Connector.js';
-import { Footer } from '../Common/Footer.js';
+import { Footer } from '../Footers/Footer.js';
 import './Home.css';
 
 export default class Home extends Component {
