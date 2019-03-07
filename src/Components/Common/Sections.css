@@ -39,8 +39,8 @@
   /* background-color: #d8ab17; */
 }
 
-.outline-white {
-  text-shadow: -1px -1px 0 white,1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+.outline-gray {
+  text-shadow: -1px -1px 0 lightgray,1px -1px 0 lightgray, -1px 1px 0 lightgray, 1px 1px 0 lightgray;
 }
 
 .text-outline {
