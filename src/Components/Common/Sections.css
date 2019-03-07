@@ -139,6 +139,10 @@
   /* padding: 0.5em; */
 }
 
+.safety-text-lg-screen {
+  margin-bottom: 7em;
+}
+
 .products-section {
   background-image: url('../../img/father-son-door.jpg');
   color: white;
@@ -160,9 +164,6 @@
   margin-top: 1em;
   margin-bottom: 5em;
   padding-left: .5em;
-  /* padding-right: 1em; */
-
-
 }
 
 .products-subheading {
@@ -179,7 +180,7 @@
 }
 
 .products-text-lg-screen {
-
+margin-bottom: 12em;
 }
 
 .automation {
@@ -189,6 +190,12 @@
 }
 
 .automation-lg-screen {
+
+}
+
+.automation-text-lg-screen {
+  margin-left: 0.5em;
+  padding-right: 28em;
 }
 
 .automation-heading {

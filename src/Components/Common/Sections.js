@@ -35,7 +35,7 @@ const SectionSafety = (props) => {
     safetyTextClass = '';
   } else if (props.screenSize === 'large') {
     sectionClass = 'section-lg-screen';
-    safetyTextClass = 'section-text-lg-screen';
+    safetyTextClass = 'section-text-lg-screen safety-text-lg-screen';
   }
   return (
     <div className={`section safety ${sectionClass}`}>
@@ -73,7 +73,7 @@ const SectionAutomation = (props) => {
     automationTextClass = '';
   } else if (props.screenSize === 'large') {
     sectionClass = 'section-lg-screen automation-lg-screen';
-    automationTextClass = 'section-text-lg-screen';
+    automationTextClass = 'section-text-lg-screen automation-text-lg-screen';
   }
     return (
       <div className={`section automation ${sectionClass}`}>

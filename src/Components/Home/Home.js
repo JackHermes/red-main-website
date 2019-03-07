@@ -55,7 +55,7 @@ export default class Home extends Component {
 // check if each connector component is visible
 // when it is, fade it in
   handleScroll(event) {
-    // After all 4 have faded in, stop checking
+    // After all n have faded in, stop checking
     if(this.state.stopCheckingForFadeIn > 0) {
 
       debounce(
