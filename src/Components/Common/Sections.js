@@ -104,26 +104,26 @@ const SectionCPR = (props) => {
   )
 }
 
-const ColorBoxes = (props) => {
-  let colorBoxesClass, colorBoxClass;
-  if(props.screenSize === 'small') {
-    colorBoxesClass = 'color-boxes-sm';
-    colorBoxClass = 'color-box-sm';
-  } else if(props.screenSize === 'large') {
-    // TODO
-    colorBoxesClass = '';
-    colorBoxClass = '';
-  }
+// const ColorBoxes = (props) => {
+//   let colorBoxesClass, colorBoxClass;
+//   if(props.screenSize === 'small') {
+//     colorBoxesClass = 'color-boxes-sm';
+//     colorBoxClass = 'color-box-sm';
+//   } else if(props.screenSize === 'large') {
+//     // TODO
+//     colorBoxesClass = '';
+//     colorBoxClass = '';
+//   }
+//
+//   return (
+//     <div className={`section color-boxes ${colorBoxesClass}`}>
+//       <div className={`color-box ${colorBoxClass} box-one`}>Thing One</div>
+//       <div className={`color-box ${colorBoxClass} box-two`}>Thing Two</div>
+//       <div className={`color-box ${colorBoxClass} box-three`}>Thing Three</div>
+//       <div className={`color-box ${colorBoxClass} box-four`}>Thing Four</div>
+//       <div className={`color-box ${colorBoxClass} box-five`}>Thing Five</div>
+//     </div>
+//   )
+// };
 
-  return (
-    <div className={`section color-boxes ${colorBoxesClass}`}>
-      <div className={`color-box ${colorBoxClass} box-one`}>Thing One</div>
-      <div className={`color-box ${colorBoxClass} box-two`}>Thing Two</div>
-      <div className={`color-box ${colorBoxClass} box-three`}>Thing Three</div>
-      <div className={`color-box ${colorBoxClass} box-four`}>Thing Four</div>
-      <div className={`color-box ${colorBoxClass} box-five`}>Thing Five</div>
-    </div>
-  )
-};
-
-export { ColorBoxes, SectionProtect, SectionSafety, SectionProducts, SectionAutomation, SectionCPR };
+export { SectionProtect, SectionSafety, SectionProducts, SectionAutomation, SectionCPR };

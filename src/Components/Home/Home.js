@@ -106,8 +106,6 @@ export default class Home extends Component {
         <SectionCPR screenSize={this.props.screenSize}/>
 
         <Connector id={this.state.connectorProps[4].elementId} titleText={this.state.connectorProps[4].titleText} descriptiveText={this.state.connectorProps[4].descriptiveText} screenSize={this.props.screenSize}/>
-
-        {/*<Footer class='footer' />*/}
       </div>
     )
   }
