@@ -16,9 +16,20 @@
   width: auto;
 }
 
+.products-text-heading-lg-screen {
+  font-size: 2.75em;
+  width: 11em;
+}
+
 .products-text-subheading {
   font-size: 2.75em;
   margin-left: 1em;
+}
+
+.products-text-subheading-lg-screen {
+  font-size: 4.75em;
+  margin-left: 4em;
+  width: 7em;
 }
 
 .products-finally {
@@ -59,7 +70,8 @@
 
 .products-pg-text-lg-screen {
   /* display: flex; */
-  margin-left: auto;
+  margin-left: 12em;
   margin-right: auto;
+  padding-top: 2em;
   width: 50em;
 }

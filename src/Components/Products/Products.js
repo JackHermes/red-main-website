@@ -17,26 +17,28 @@ export default class Products extends Component {
   }
 
   render() {
-    let sectionClass, productsHeadingClass, productsSubheadingClass;
+    let sectionClass, productsCombiningClass, productsHeadingClass, productsSubheadingClass;
 
     if(this.props.screenSize === 'small') {
       // console.log('Small!');
       sectionClass = '';
+      productsCombiningClass = '';
       productsHeadingClass = '';
       productsSubheadingClass = '';
     } else if (this.props.screenSize === 'large'){
       // console.log('Large!');
       sectionClass = 'section-lg-screen';
-      productsHeadingClass = 'products-pg-text-lg-screen';
-      productsSubheadingClass = '';
+      productsCombiningClass = 'products-pg-text-lg-screen';
+      productsHeadingClass = 'products-text-heading-lg-screen'
+      productsSubheadingClass = 'products-text-subheading-lg-screen';
     }
 
     return (
       <div className={`products`}>
         <div className={`section products-combining ${sectionClass}`}>
-          <div className={`${productsHeadingClass}`}>
-            <p className={`subheading background-white products-text-heading`}>Combining Products</p>
-            <p className={`heading background-white products-text-subheading`}>like no other</p>
+          <div className={`${productsCombiningClass}`}>
+            <p className={`subheading background-white products-text-heading ${productsHeadingClass}`}>Combining Products</p>
+            <p className={`heading background-white products-text-subheading ${productsSubheadingClass}`}>like no other</p>
             </div>
         </div>
         <Connector titleText='Security Devices' descriptiveText='We believe in quality equipment that does its job without needing to think about it.' screenSize={this.props.screenSize} />
