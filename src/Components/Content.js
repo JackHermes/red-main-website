@@ -21,8 +21,7 @@ const Content = (props) => {
       <div className={mainClass}>
         <Route exact path='/' render={() => <Home screenSize={props.screenSize} />}/>
         <Route exact path='/products' render={() => <Products screenSize={props.screenSize}/>} />
-        <Route exact path='/contact' component={Contact} />
-        {/*<Footer class={footerClass}/>*/}
+        <Route exact path='/contact' render={() => <Contact screenSize={props.screenSize}/>} />
       </div>
     )
 };

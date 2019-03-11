@@ -18,6 +18,7 @@ export default class Products extends Component {
 
   render() {
     let sectionClass, productsHeadingClass, productsSubheadingClass;
+
     if(this.props.screenSize === 'small') {
       // console.log('Small!');
       sectionClass = '';
