@@ -39,12 +39,14 @@ export default class Products extends Component {
           <div className={`${productsCombiningClass}`}>
             <p className={`subheading background-white products-text-heading ${productsHeadingClass}`}>Combining Products</p>
             <p className={`heading background-white products-text-subheading ${productsSubheadingClass}`}>like no other</p>
+            <p>[item images here]</p>
             </div>
         </div>
         <Connector titleText='Security Devices' descriptiveText='We believe in quality equipment that does its job without needing to think about it.' screenSize={this.props.screenSize} />
         <div className={`section products-finally ${sectionClass}`}>
           <p className={`subheading products-text-subheading no-margin`}>Finally</p>
           <p className={`heading products-text-heading background-solid-yellow outline-gray`}>everything in one app</p>
+          <p>[item images here]</p>
         </div>
         <Connector titleText='Alarm.com' descriptiveText='We are backed by Alarm.com, trusted by millions every day.' screenSize={this.props.screenSize} />
         <div className={`section products-redefine ${sectionClass}`}>

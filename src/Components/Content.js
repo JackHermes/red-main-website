@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import { Footer } from './Footers/Footer.js';
 import Home from './Home/Home.js';
 import Products from './Products/Products.js';
+import CPR from './CPR/CPR.js';
 import Contact from './Contact/Contact.js';
 
 const Content = (props) => {
@@ -22,6 +23,7 @@ const Content = (props) => {
         <Route exact path='/' render={() => <Home screenSize={props.screenSize} />}/>
         <Route exact path='/products' render={() => <Products screenSize={props.screenSize}/>} />
         <Route exact path='/contact' render={() => <Contact screenSize={props.screenSize}/>} />
+        <Route exact path='/cpr' render={() => <Products screenSize={props.screenSize}/>} />
       </div>
     )
 };

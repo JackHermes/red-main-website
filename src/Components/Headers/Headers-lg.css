@@ -35,7 +35,7 @@
 }
 
 .nav-contact {
-  grid-column: 4 / 7;
+  grid-column: 4 / 6;
 }
 
 .nav-about {
@@ -46,6 +46,10 @@
 /* .nav-colors {
   grid-column: 7;
 } */
+
+.nav-cpr {
+  grid-column: 6 / 7;
+}
 
 .contact-us-box-lg {
   bottom: auto;
