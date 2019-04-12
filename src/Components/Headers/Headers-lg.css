@@ -34,10 +34,6 @@
   grid-column: 2 / 3;
 }
 
-.nav-contact {
-  grid-column: 4 / 6;
-}
-
 .nav-about {
   /* grid-column: 5 / 6; */
   width: 12em;
@@ -48,7 +44,15 @@
 } */
 
 .nav-cpr {
+  grid-column: 4 / 5;
+}
+
+.nav-careers {
   grid-column: 6 / 7;
+}
+
+.nav-contact {
+  grid-column: 8 / 11;
 }
 
 .contact-us-box-lg {
